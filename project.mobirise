@@ -146,11 +146,11 @@
             },
             ".mbr-section-subtitle, .mbr-section-btn": {
               "color": "#efefef",
-              "text-align": "center"
+              "text-align": "left"
             },
             ".mbr-section-title": {
-              "text-align": "center",
-              "color": "#000000"
+              "text-align": "left",
+              "color": "#efefef"
             }
           },
           "_name": "header4",
