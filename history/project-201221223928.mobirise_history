@@ -1,0 +1,1485 @@
+{
+  "settings": {
+    "name": "老废物数据组",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise-amp",
+      "title": "Mobirise AMP",
+      "styling": {
+        "primaryColor": "#336a95",
+        "secondaryColor": "#4addff",
+        "successColor": "#0dcd7b",
+        "infoColor": "#123048",
+        "warningColor": "#767676",
+        "dangerColor": "#a0a0a0",
+        "mainFont": "Roboto",
+        "display1Font": "Roboto",
+        "display1Size": 4.5,
+        "display2Font": "Roboto",
+        "display2Size": "2.3",
+        "display5Font": "Roboto",
+        "display5Size": "1.3",
+        "display7Font": "Roboto",
+        "display7Size": "1",
+        "display4Font": "Roboto",
+        "display4Size": "0.9",
+        "isRoundedButtons": false,
+        "isScrollToTopButton": false,
+        "arrowColor": "#336a95"
+      },
+      "additionalSetColors": [
+        "#efeee7",
+        "#123048",
+        "#06243b",
+        "#3f485d",
+        "#197316",
+        "#349fb8",
+        "#388192"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.1.4",
+    "siteFonts": [],
+    "imageResize": true,
+    "uniqCompNum": 112,
+    "versionPublish": "5.1.4",
+    "screenshot": "screenshot.png"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@menuBgColor",
+            "overflow": "visible",
+            ".navbar": {
+              "background": "@menuBgColor"
+            },
+            ".builder-sidebar, .dropdown-menu": {
+              "background-color": "@menuBgColor"
+            },
+            ".close-sidebar": {
+              "&:focus": {
+                "outline": "2px auto @primaryColor"
+              },
+              "span": {
+                "background-color": "@hamburgerColor"
+              }
+            },
+            ".ampstart-btn, amp-sidebar": {
+              "display": "block",
+              "&:focus": {
+                "outline": "none"
+              }
+            },
+            ".nav-dropdown a": {
+              "padding": "0.5rem 0 !important",
+              "margin": "0 0 10px !important"
+            },
+            ".navbar .navbar-collapse": {
+              "display": "none",
+              "&.show": {
+                "display": "block",
+                "position": "absolute",
+                "top": "0",
+                "& when (@sidebarSide = 'right')": {
+                  "right": "0"
+                },
+                "& when (@sidebarSide = 'left')": {
+                  "right": "auto",
+                  "left": "0"
+                },
+                "height": "100vh",
+                "overflow-y": "auto",
+                "padding": "70px 2rem 1rem",
+                "z-index": "1",
+                "background": "@menuBgColor"
+              }
+            },
+            ".dropdown.open > .dropdown-menu, .dropdown:hover > .dropdown-menu, .dropdown-item.dropdown-toggle": {
+              "left": "0",
+              "position": "relative"
+            },
+            "@media (min-width: 992px)": {
+              ".dropdown-menu .dropdown-toggle:after": {
+                "transform": "rotate(90deg)"
+              }
+            },
+            ".hamburger span": {
+              "background-color": "@hamburgerColor"
+            },
+            "amp-img": {
+              "height": "~\"@{logoHeight}px\"",
+              "width": "~\"@{logoWidth}px\"",
+              "img": {
+                "object-fit": "contain"
+              }
+            },
+            ".brand-name": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "menu1",
+          "_customHTML": "<section class=\"menu  horizontal-menu\" group=\"Menu\" plugins=\"amp-main,amp-sidebar\" global=\"\" once=\"menu\" always-top=\"\" position-absolute=\"\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked=\"\">\n        <input type=\"range\" title=\"Logo Height\" inline=\"\" name=\"logoHeight\" min=\"35\" max=\"120\" value=\"38\" step=\"1\">\n        <input type=\"range\" title=\"Logo Width\" inline=\"\" name=\"logoWidth\" min=\"35\" max=\"120\" value=\"45\" step=\"1\">\n\n        <input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Links\" name=\"showLinks\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked=\"\">\n        <select title=\"Sidebar Side\" name=\"sidebarSide\">\n            <option value=\"left\">Left</option>\n            <option value=\"right\" selected=\"\">Right</option>\n        </select>\n        <input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#000000\">\n        <input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <nav class=\"navbar navbar-dropdown\" mbr-class=\"{'navbar-fixed-top': sticky}\">\n    <div class=\"menu-container mbr-jc-s container-fluid\">\n      <div class=\"navbar-brand\">\n          <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n              <amp-img src=\"@PROJECT_PATH@/assets/images/-90x90.jpg\" layout=\"responsive\" width=\"38\" height=\"38\" alt=\"Mobirise\" class=\"mobirise-loader\">\n                  <div placeholder=\"\" class=\"placeholder\"></div>\n                  <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/-90x90.jpg\" alt=\"Mobirise\">\n              </amp-img>\n          </span>\n          <p mbr-text=\"\" mbr-theme-style=\"display-7\" mbr-if=\"showBrand\" class=\"brand-name mbr-fonts-style mbr-bold\" data-app-selector=\".brand-name\">Data Journalism And Data-driven Journalism</p>\n      </div>\n        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n      <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showLinks || showButtons\">\n        <div class=\"hamburger\">\n          <span></span>\n          <span></span>\n          <span></span>\n          <span></span>\n        </div>\n        </button>\n        <!-- NAVBAR ITEMS -->\n        <ul mbr-menu=\"\" class=\"navbar-nav nav-dropdown mbr-column\" mbr-theme-style=\"display-7\" mbr-if=\"showLinks\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish &amp;&amp; !showBrand &amp;&amp; !showLogo}\"><li class=\"nav-item dropdown\">\n            <a class=\"nav-link link text-secondary dropdown-toggle\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" data-toggle=\"dropdown-submenu\" aria-expanded=\"true\">Home</a><div class=\"dropdown-menu\"><div class=\"dropdown\"><a class=\"text-secondary dropdown-item dropdown-toggle\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" data-toggle=\"dropdown-submenu\" aria-expanded=\"true\">附加知识</a><div class=\"dropdown-menu dropdown-submenu\"><a class=\"text-secondary dropdown-item text-primary\" href=\"http://www.gov.cn/xinwen/2017-01/27/content_5163903.htm#1\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" target=\"_blank\">教育部：《统筹推进世界一流大学和<br>一流学科建设实施办法（暂行）》</a><a class=\"text-secondary dropdown-item text-primary\" href=\"http://www.moe.gov.cn/s78/A22/A22_ztzl/ztzl_tjsylpt/sylpt_zcwj/\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\" target=\"_blank\">“双一流”建设政策文件</a></div></div></div>\n          </li></ul>\n        <!-- NAVBAR ITEMS END -->\n        <!-- SHOW BUTTON -->\n        <div mbr-if=\"showButtons\" mbr-buttons=\"\" mbr-theme-style=\"display-7\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-md btn-black mbr-bold\" href=\"#\" data-app-placeholder=\"Type Text\">Join us</a></div>\n        <!-- SHOW BUTTON END -->\n      </div>\n      <!-- COLLAPSED MENU END -->\n      <button class=\"navbar-toggler hide\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showLinks || showButtons\">\n      <div class=\"hamburger\">\n        <span></span>\n        <span></span>\n        <span></span>\n        <span></span>\n      </div>\n      </button>\n      <button on=\"tap:sidebar.toggle\" class=\"ampstart-btn hamburger\" mbr-if=\"(showLinks||showButtons)\">\n        <span></span>\n        <span></span>\n        <span></span>\n        <span></span>\n      </button>\n    </div>\n  </nav>\n  <!-- AMP plug -->\n  <amp-sidebar id=\"sidebar\" layout=\"nodisplay\" side=\"{{sidebarSide}}\">\n    <div class=\"builder-sidebar\" id=\"builder-sidebar\">\n      <button on=\"tap:sidebar.close\" class=\"close-sidebar\">\n      <span></span>\n      <span></span>\n      </button>\n    </div>\n  </amp-sidebar>\n    \n</section>",
+          "_cid": "sg2E75DTV6",
+          "_anchor": "menu1-8",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "menu",
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-section-title": {
+              "text-align": "center",
+              "color": "#ffffff"
+            },
+            ".mbr-section-subtitle, .mbr-section-btn DIV": {
+              "text-align": "center"
+            },
+            ".mbr-section-subtitle, .mbr-section-btn": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "header4",
+          "_customHTML": "<section class=\"header4\" group=\"Headers\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        \n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/-20201115231327-2000x1428.jpeg\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#15181b\"> \n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <h1 class=\"mbr-fonts-style mbr-section-title align-left mbr-black mbr-bold mbr-pt-1 mbr-pb-3\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n            近五年，国内一流大学\n        <div>对公共教学环境投入几何？</div></h1>\n        <h2 class=\"mbr-fonts-style mbr-section-subtitle align-left mbr-black mbr-light mbr-pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-section-subtitle, .mbr-section-btn\"><b>\n            制作者：老废物小组\n        </b><div><b>包梦瀛 新闻传播学院\n</b></div><div><b>陈紫瑄 新闻传播学院\n</b></div><div><b>林鑫 新闻传播学院\n</b></div><div><b>谭昕煜 信息管理学院</b></div></h2>\n        <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\">\n            <a class=\"btn btn-md btn-black\" href=\"https://mobiri.se\">\n                TRY IT\n            </a>\n        </div>\n    </div>\n</section>",
+          "_cid": "sgqh3wyZkJ",
+          "_anchor": "header4-1d",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            }
+          },
+          "_name": "content1",
+          "_customHTML": "<section class=\"mbr-section content1\" group=\"Article\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background2.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#efefef\" selected>\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n     <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"mbr-title align-center mbr-fonts-style mbr-bold mbr-pb-2\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-title\">\n                    选题由来</h2>\n                <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-5 mbr-pt-1 mbr-pb-3\">\n                    <i>Shape your future web project with sharp design and refine coded functions.</i>\n                </h3>\n                <div class=\"mbr-section-btn align-center mbr-pt-3\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove\">\n                    <a class=\"btn btn-primary\" href=\"https://mobiri.se\">LEARN MORE</a>\n                    <a class=\"btn btn-black-outline\" href=\"https://mobiri.se\">LIVE DEMO</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sgq9vVynsg",
+          "_anchor": "content1-1b",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".counter-container": {
+              "li when (@stylizedCounters)": {
+                "list-style": "none",
+                "position": "relative",
+                "&:before": {
+                  "position": "absolute",
+                  "left": "-55px",
+                  "content": "''",
+                  "display": "inline-block",
+                  "margin": "10px 15px",
+                  "line-height": "20px",
+                  "width": "10px",
+                  "height": "10px",
+                  "& when (@countersType = 'circle')": {
+                    "border": "1px solid @counterColor",
+                    "color": "@counterColor"
+                  },
+                  "& when not (@countersType = 'circle')": {
+                    "color": "contrast(@counterColor)",
+                    "background": "@counterColor"
+                  },
+                  "& when not (@countersType = 'square') and not (@countersType = 'romb')": {
+                    "border-radius": "50%"
+                  },
+                  "& when (@countersType = 'romb')": {
+                    "-webkit-transform": "rotate(45deg)",
+                    "transform": "rotate(45deg)"
+                  }
+                }
+              }
+            }
+          },
+          "_name": "content7",
+          "_customHTML": "<section class=\"content7 mbr-section\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\" checked>\n        <input type=\"color\" title=\"Counter Color\" name=\"counterColor\" value=\"#2e9a6b\" condition=\"stylizedCounters\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\" checked>\n        <select title=\"Counters Type\" name=\"countersType\" condition=\"stylizedCounters\">\n            <option value=\"default\">Сircle Fill</option>\n            <option value=\"circle\">Circle</option>\n            <option value=\"square\">Square</option>\n            <option value=\"romb\" selected>Rhombus</option>\n\n        </select>   \n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#efefef\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\">\n            <div class=\"mbr-text counter-container mbr-fonts-style mbr-col-lg-8 mbr-col-md-12 mbr-col-sm-12\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                <ul>\n                    <li class=\"mbr-pb-2\">各大高校，特别是“双一流”高校的预算和经费状况总是社会关注的焦点。“再穷不能穷教育”，即使在大疫来袭、中央号召“过紧日子”的2020年，教育部直属高校的预算经费仍高达4488.26亿元。<b>如此高额的经费究竟花在哪里？又将怎么花？\n</b></li><li class=\"mbr-pb-2\">插座不够多、桌椅不舒适、投影设备陈旧、空调噪声大等问题长期以来困扰着师生，影响师生的教学体验和学习体验，陈旧的设备甚至阻碍教学活动的顺利进行。<b>高校究竟怎么处理教学环境提升的问题？是运动式的一次性大投入，还是稳扎稳打逐步改进？能否对教学环境这一事关师生日常体验的重要方面投以应有的关注，是高校治理能力和人文关怀的试金石。\n</b></li><li class=\"mbr-pb-2\">新冠肺炎疫情以来，在物理教学环境之外，“虚拟教学空间”为分散各地无法返校的师生提供了另一种可能性。<b>在线教学究竟是匆匆引入的权宜之计？还是进一步改变今后教学模式的重要契机？高校能否在新冠疫情这样的大型危机事件中及时决策，足以体现高校随机应变的治理能力。\n</b></li><li class=\"mbr-pb-2\">无论一所高校发表多少论文、购置多少高精尖实验设备、规划多少校区、建设多少大楼，<b>公共教学环境才是师生全天候接触的学习生活“第一线”，对公共教学环境的投入才是高校作为教育机构对师生关怀的“硬指标”。</b></li>\n                </ul>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sgpKuL5t8c",
+          "_anchor": "content7-1a",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "section": {
+              "padding": "0"
+            },
+            ".section-title": {
+              "z-index": "2",
+              "background-color": "@tabsColor1",
+              "padding": "1.3rem 2rem",
+              "border": "1px solid @tabsBorder"
+            },
+            "p": {
+              "z-index": "1",
+              "background-color": "@tabsColor2",
+              "box-shadow": "inset 1px 36px 20px -30px rgba(121, 121, 121, 0.13)"
+            },
+            "P": {
+              "text-align": "left"
+            },
+            ".mbr-section-subtitle DIV": {
+              "text-align": "left"
+            },
+            ".mbr-section-subtitle": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "toggle1",
+          "_customHTML": "<section class=\"accordion\" group=\"Toggles & Tabs\" plugins=\"amp-main,amp-accordion\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"4\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"4\" step=\"1\">\n        \n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        \n        <select title=\"Tabs\" name=\"tabsAmount\">\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\">6</option>\n        </select>\n        <input type=\"color\" title=\"Tabs Color 1\" name=\"tabsColor1\" value=\"#efefef\">\n        <input type=\"color\" title=\"Tabs Border 1\" name=\"tabsBorder\" value=\"#dfdfdf\">\n        <input type=\"color\" title=\"Tabs Color 2\" name=\"tabsColor2\" value=\"#ffffff\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background6.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"container\">\n      <div class=\"mbr-row mbr-jc-c\">\n        <div class=\"mbr-col-sm-12 mbr-col-md-8\">\n          <h3 class=\"mbr-fonts-style mbr-section-title mbr-light align-center mbr-pt-1\" mbr-if=\"showTitle\" mbr-class=\"{'mbr-pb-3': showSubtitle}\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\"><b>调查思路和方法</b></h3>\n          <h4 class=\"mbr-fonts-style mbr-section-subtitle mbr-light align-center\" mbr-if=\"showSubtitle\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-section-subtitle\">本调查选取了2017年9月21日教育部、财政部、国家发展和改革委员会联合发布《关于公布世界一流大学和一流学科建设高校及建设学科名单的通知》中的北京大学等42所世界一流大学建设高校（下称“一流高校”）作为调查对象。\n<br><br><div>在42所一流高校中，郑州大学、西北工业大学、哈尔滨工业大学、北京航空航天大学、北京理工大学、国防科技大学并未在本校信息公开网站上公布各年度预算信息，涉及国防科工类院校的招投标信息并未完全公开呈现，因此在本调查中将这上述六所学校舍去。\n</div><br><div><br></div><div>在时间选择上，考虑到高校相关投入可能存在“大水漫灌”运动式投入和“细水长流”稳扎稳打两种情况，我们希望衡量一所高校预算支出与公共教学开支的时间性特点。因此在本调查中，我们结合高校预算公开情况和中国政府采购网的公开情况，最后选取了2016年-2020年（招标采购数据截止于11月21日）。\n</div><br><div><br></div><div>此外，我们对“公共教学环境”、具体的调查对象、数据来源与方法进行了相关规定：</div></h4>\n          <amp-accordion class=\"accordion\" disable-session-states mbr-class=\"{'mbr-pt-4': showTitle || showSubtitle}\">\n            <section expanded>\n              <h4 class=\"section-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".section-title\">公共教学环境是什么？</h4>\n              <p class=\"mbr-fonts-style mbr-p-3\" mbr-theme-style=\"display-7\">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<b> 对招标数据的核算和筛选主要标准是：是否能够服务和改善公共教学环境、自习自修环境、在线教学环境、软件使用环境。\n</b><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;本调查对高校公共教学环境投入的定义是：<b>在招标方案中，明确说明采购项目用于公共教学楼、院系楼、图书馆等公共教学物理环境的采购项</b>，如桌椅板凳、多媒体设备、安防监控、网络设施、装修投入、图书采购等；<b>新冠疫情以来，特别是作为2020年春季学期的“复学”举措，“公共教学虚拟环境”变得越发重要</b>，因此，在线教学设备、网络课程直播室、在线课程软件服务采购、网络课程制作、供师生使用的软件服务等投入也被充分纳入了核算中。\n<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;对于用途不明的采购项目不计入核算，对于无关提升学生教学环境体验的设施不计入核算，对于教学楼、院系楼等建筑建设本身不计入核算。此外，因为关注“公共教学环境”，本调查主要强调有助于提升供大部分学生使用、自习和教学活动的投入，排除对专供具体学科或院系的、专门用于科研而非教学的投入。<br></p>\n            </section>\n            <section>\n              <h4 class=\"section-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".section-title\">我们在调查什么？</h4>\n              <p class=\"mbr-fonts-style mbr-p-3\" mbr-theme-style=\"display-7\">1、通过爬取中国政府采购网上公开的高校招标采购信息，我们调研了北京大学等36所世界一流大学建设高校在2016-2020年间对公共教学环境的投入情况。 <br>\n<br>2、通过对比五年间各所高校的年度预算支出与公共教学环境投入的比值，我们试图评估中国一流高校究竟在多大程度上关注和重视对公共教学环境的建设和投入。 <br>\n<br>3、通过招标采购的筛选和对比，我们可以评估相关高校是否能够对公共教学环境建设做出周期性的规划，并将其视为一个观察高校治理能力高低的角度。 <br>\n<br>4、通过评估相关高校在疫情期间对“在线教学环境”的投入（如直播软件采购、直播授课环境建设等），我们试图判断中国一流高校处理和应对突发事件的能力。\n<br><br>5、通过对典型高校采购事项进行挖掘，我们试图评估相关高校对公共教学环境的投入情况背后所反映的人文关怀和治理能力。&nbsp;<br></p>\n            </section>\n            <section mbr-if=\"tabsAmount > 2\">\n              <h4 class=\"section-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".section-title\">数据来源与方法选择？</h4>\n              <p class=\"mbr-fonts-style mbr-p-3\" mbr-theme-style=\"display-7\">&nbsp; &nbsp; &nbsp; &nbsp; 本调查所采用的高校预算经费收入与支出信息均来自2016-2020年各大高校在其信息公开网站上发布的年度部门预算文件，本调查涉及的公共教学环境投入数据则来自中国政府采购网、中国政府购买服务信息平台（http://www.ccgp.gov.cn）。调查者使用爬虫工具（主要是Python方法和八抓鱼工具）在上述网站检索相关高校主体政府采购信息并加以抓取。&nbsp;<br></p>\n            </section>\n            <section mbr-if=\"tabsAmount > 3\">\n              <h4 class=\"section-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".section-title\">Why Mobirise?</h4>\n              <p class=\"mbr-fonts-style mbr-p-3\" mbr-theme-style=\"display-7\">\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit repudiandae possimus fugit nesciunt nostrum provident reprehenderit quasi molestiae, veritatis sapiente, pariatur, rem dignissimos esse deleniti eligendi laborum dolor, doloribus repellat?Nesciunt minima corporis fuga, saepe atque obcaecati, asperiores vero, recusandae, odit totam nobis cumque accusamus impedit nam odio minus iure labore! Laborum similique fuga, libero vel minima nulla necessitatibus eaque.\n              </p>\n            </section>\n            <section mbr-if=\"tabsAmount > 4\">\n              <h4 class=\"section-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".section-title\">Why Mobirise?</h4>\n              <p class=\"mbr-fonts-style mbr-p-3\" mbr-theme-style=\"display-7\">\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit repudiandae possimus fugit nesciunt nostrum provident reprehenderit quasi molestiae, veritatis sapiente, pariatur, rem dignissimos esse deleniti eligendi laborum dolor, doloribus repellat?Nesciunt minima corporis fuga, saepe atque obcaecati, asperiores vero, recusandae, odit totam nobis cumque accusamus impedit nam odio minus iure labore! Laborum similique fuga, libero vel minima nulla necessitatibus eaque.\n              </p>\n            </section>\n            <section mbr-if=\"tabsAmount > 5\">\n              <h4 class=\"section-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".section-title\">Why Mobirise?</h4>\n              <p class=\"mbr-fonts-style mbr-p-3\" mbr-theme-style=\"display-7\">\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit repudiandae possimus fugit nesciunt nostrum provident reprehenderit quasi molestiae, veritatis sapiente, pariatur, rem dignissimos esse deleniti eligendi laborum dolor, doloribus repellat?Nesciunt minima corporis fuga, saepe atque obcaecati, asperiores vero, recusandae, odit totam nobis cumque accusamus impedit nam odio minus iure labore! Laborum similique fuga, libero vel minima nulla necessitatibus eaque.\n              </p>\n            </section>\n          </amp-accordion>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "toggle1-22",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise-amp",
+          "_cid": "sj991JReF3",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            }
+          },
+          "_name": "content1",
+          "_customHTML": "<section class=\"mbr-section content1\" group=\"Article\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background2.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#efefef\" selected>\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n     <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"mbr-title align-center mbr-fonts-style mbr-bold mbr-pb-2\" mbr-theme-style=\"display-1\" data-app-selector=\".mbr-title\">\n                    事实究竟是什么？</h2>\n                <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-5 mbr-pt-1 mbr-pb-3\">\n                    <i>Shape your future web project with sharp design and refine coded functions.</i>\n                </h3>\n                <div class=\"mbr-section-btn align-center mbr-pt-3\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove\">\n                    <a class=\"btn btn-primary\" href=\"https://mobiri.se\">LEARN MORE</a>\n                    <a class=\"btn btn-black-outline\" href=\"https://mobiri.se\">LIVE DEMO</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sjNQ6pp0pt",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content1-2j"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            }
+          },
+          "_name": "content1",
+          "_customHTML": "<section class=\"mbr-section content1\" group=\"Article\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background2.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#efefef\" selected>\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n     <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"mbr-title align-center mbr-fonts-style mbr-bold mbr-pb-2\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-title\">——具体研究成果</h2>\n                <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-5 mbr-pt-1 mbr-pb-3\">\n                    <i>Shape your future web project with sharp design and refine coded functions.</i>\n                </h3>\n                <div class=\"mbr-section-btn align-center mbr-pt-3\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove\">\n                    <a class=\"btn btn-primary\" href=\"https://mobiri.se\">LEARN MORE</a>\n                    <a class=\"btn btn-black-outline\" href=\"https://mobiri.se\">LIVE DEMO</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content1-2f",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise-amp",
+          "_cid": "sjfhyq3TzX",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor"
+          },
+          "_name": "content16",
+          "_customHTML": "<section class=\"content16 mbr-section article\" plugins=\"amp-main\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#336a95\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"mbr-text align-center mbr-fonts-style mbr-white mbr-bold mbr-py-4\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text\" mbr-text><i>一、36所中国一流高校预算支出与公共环境投入概览</i></div>\n    </div>\n</section>",
+          "_cid": "sj24frMgBu",
+          "_anchor": "content16-1x",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor"
+          },
+          "_name": "content2",
+          "_customHTML": "<section class=\"content2 mbr-section article\" plugins=\"amp-main\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-10 mbr-col-lg-8\">\n                <h3 class=\"mbr-fonts-style mbr-section-title mbr-light mbr-py-1\" mbr-if=\"showTitle\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\">\n                    Free Website Builder\n                </h3>\n                <p class=\"mbr-text mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text\" data-multiline mbr-article><b>经过爬取和计算，我们将数据呈现如下：</b></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sjNSUYBhTV",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content2-2n"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            "blockquote": {
+              "border-color": "@lineColor"
+            }
+          },
+          "_name": "content10",
+          "_customHTML": "<section class=\"content10 mbr-section article\" plugins=\"amp-main\" group=\"Article\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"color\" title=\"Line Color\" name=\"lineColor\" value=\"#767676\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n    <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\">\n            <div class=\"mbr-text mbr-fonts-style mbr-col-sm-12 mbr-col-md-8\" mbr-theme-style=\"display-7\" data-multiline mbr-article>\n                <blockquote>1. 在预算支出中，以2020年为例，清华大学、中山大学、北京大学、上海交通大学和浙江大学以超过100亿元的支出位列高校前五名，而最少的中央民族大学仅有18.36亿元。尽管同属于一流高校，但由于学科建置、学校规模、学校定位、学校收入等因素，各校预算支出存在很大差别。而高校的预算支出可以反映出一所高校可以支配、打算支配的资金额度，并相应影响。</blockquote>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sjNT9apdLW",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content10-2o"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "& when not (@fullWidth)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            ".image-block": {
+              "& when not (@fullWidth)": {
+                "width": "~\"@{videoSize}%\"",
+                "@media (max-width: 767px)": {
+                  "width": "100% !important"
+                }
+              }
+            },
+            "img": {
+              "object-fit": "contain"
+            }
+          },
+          "_name": "image2",
+          "_customHTML": "<section class=\"image2\" group=\"Images & Videos\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"0\" step=\"1\" condition=\"fullWidth == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"2\" step=\"1\" condition=\"fullWidth == false\">\n        <input type=\"range\" inline title=\"Width\" name=\"videoSize\" min=\"20\" max=\"100\" value=\"85\" step=\"1\" condition=\"fullWidth == false\">\n        <input type=\"checkbox\" title=\"Show Caption\" name=\"showText\">\n\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\" condition=\"showText==true\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-class=\"{'container': fullWidth == false}\">\n        <div class=\"image-block mbr-m-auto\">\n            <amp-img src=\"@THEME_PATH@/components/_images/img/01.jpg\" layout=\"responsive\" width=\"731.265\" height=\"487.51\" alt=\"Mobirise\" class=\"mobirise-loader\">\n                <div placeholder class=\"placeholder\"></div>\n                <img class=\"mbr-temp\" src=\"@THEME_PATH@/components/_images/img/01.jpg\" alt=\"Mobirise\">\n            </amp-img>\n            <div class=\"mbr-figure-caption\" mbr-if=\"showText\">\n                <p mbr-text class=\"mbr-text mbr-black align-center mbr-fonts-style\" mbr-class=\"{'mbr-py-1': !fullWidth, 'mbr-py-1 mbr-px-2': fullWidth}\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\"></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sjOc2irZGu",
+          "_anchor": "image2-31",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            "blockquote": {
+              "border-color": "@lineColor"
+            }
+          },
+          "_name": "content10",
+          "_customHTML": "<section class=\"content10 mbr-section article\" plugins=\"amp-main\" group=\"Article\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"color\" title=\"Line Color\" name=\"lineColor\" value=\"#767676\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n    <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\">\n            <div class=\"mbr-text mbr-fonts-style mbr-col-sm-12 mbr-col-md-8\" mbr-theme-style=\"display-7\" data-multiline mbr-article>\n                <blockquote>2. 在公共教学环境招标统计中，以2020年为例，大部分一流高校都低于亿元，北京大学、清华大学、上海交通大学分别为2302.36万元、5453.46万元和3420.97万元，同属C9联盟的复旦大学和南京大学仅有681.42万元和1072.25万元。2020年，中山大学的公共教学环境招标因对深圳新校区大规模投入而超过4亿元；除同济大学外，其它两所投入超过1亿元的学校，均是因为新校区（山东大学青岛校区、浙江大学紫金港校区）投入使用或进一步完善，而在一年内投入大量资金建设和完善公共教学环境。对于大部分一流高校来说，在校区建成之时一次性投入大笔教学环境建设资金之后，基本不会再投入大笔资金加以更新、置换，日常的翻修和维护费用只占学校预算支出的很少部分。</blockquote>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sjNTClnRKO",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content10-2p"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "& when not (@fullWidth)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            ".image-block": {
+              "& when not (@fullWidth)": {
+                "width": "~\"@{videoSize}%\"",
+                "@media (max-width: 767px)": {
+                  "width": "100% !important"
+                }
+              }
+            },
+            "img": {
+              "object-fit": "contain"
+            }
+          },
+          "_name": "image2",
+          "_customHTML": "<section class=\"image2\" group=\"Images & Videos\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"2\" step=\"1\" condition=\"fullWidth == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"2\" step=\"1\" condition=\"fullWidth == false\">\n        <input type=\"range\" inline title=\"Width\" name=\"videoSize\" min=\"20\" max=\"100\" value=\"85\" step=\"1\" condition=\"fullWidth == false\">\n        <input type=\"checkbox\" title=\"Show Caption\" name=\"showText\">\n\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\" condition=\"showText==true\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-class=\"{'container': fullWidth == false}\">\n        <div class=\"image-block mbr-m-auto\">\n            <amp-img src=\"@THEME_PATH@/components/_images/img/01.jpg\" layout=\"responsive\" width=\"731.265\" height=\"487.51\" alt=\"Mobirise\" class=\"mobirise-loader\">\n                <div placeholder class=\"placeholder\"></div>\n                <img class=\"mbr-temp\" src=\"@THEME_PATH@/components/_images/img/01.jpg\" alt=\"Mobirise\">\n            </amp-img>\n            <div class=\"mbr-figure-caption\" mbr-if=\"showText\">\n                <p mbr-text class=\"mbr-text mbr-black align-center mbr-fonts-style\" mbr-class=\"{'mbr-py-1': !fullWidth, 'mbr-py-1 mbr-px-2': fullWidth}\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                    Create awesome and FAST websites!\n                </p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sjOcoasc2u",
+          "_anchor": "image2-32",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            "blockquote": {
+              "border-color": "@lineColor"
+            }
+          },
+          "_name": "content10",
+          "_customHTML": "<section class=\"content10 mbr-section article\" plugins=\"amp-main\" group=\"Article\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"color\" title=\"Line Color\" name=\"lineColor\" value=\"#767676\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n    <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\">\n            <div class=\"mbr-text mbr-fonts-style mbr-col-sm-12 mbr-col-md-8\" mbr-theme-style=\"display-7\" data-multiline mbr-article>\n                <blockquote>3. 计算公共教学环境招标金额占当年度学校预算支出比例（下称“投入占比”），以2020年为例（招标投入截止11月21日），仅有中央民族大学、中山大学和同济大学三所一流大学的投入占比超过2%，分别为3.78%、2.89%、2.12%，；其余33所学校除天津大学因预算支出数据缺失未列入计算以外，仅有7所学校投入占比超过1%，25所学校投入占比不足1%。相较于预算支出来说，一流高校的公共教学环境投入明显不足。\n</blockquote>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sjNTD8OIJk",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content10-2q"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "& when not (@fullWidth)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            ".image-block": {
+              "& when not (@fullWidth)": {
+                "width": "~\"@{videoSize}%\"",
+                "@media (max-width: 767px)": {
+                  "width": "100% !important"
+                }
+              }
+            },
+            "img": {
+              "object-fit": "contain"
+            }
+          },
+          "_name": "image2",
+          "_customHTML": "<section class=\"image2\" group=\"Images & Videos\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"2\" step=\"1\" condition=\"fullWidth == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"0\" step=\"1\" condition=\"fullWidth == false\">\n        <input type=\"range\" inline title=\"Width\" name=\"videoSize\" min=\"20\" max=\"100\" value=\"85\" step=\"1\" condition=\"fullWidth == false\">\n        <input type=\"checkbox\" title=\"Show Caption\" name=\"showText\">\n\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\" condition=\"showText==true\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-class=\"{'container': fullWidth == false}\">\n        <div class=\"image-block mbr-m-auto\">\n            <amp-img src=\"@THEME_PATH@/components/_images/img/01.jpg\" layout=\"responsive\" width=\"731.265\" height=\"487.51\" alt=\"Mobirise\" class=\"mobirise-loader\">\n                <div placeholder class=\"placeholder\"></div>\n                <img class=\"mbr-temp\" src=\"@THEME_PATH@/components/_images/img/01.jpg\" alt=\"Mobirise\">\n            </amp-img>\n            <div class=\"mbr-figure-caption\" mbr-if=\"showText\">\n                <p mbr-text class=\"mbr-text mbr-black align-center mbr-fonts-style\" mbr-class=\"{'mbr-py-1': !fullWidth, 'mbr-py-1 mbr-px-2': fullWidth}\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                    Create awesome and FAST websites!\n                </p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sjOcpehHAB",
+          "_anchor": "image2-33",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            "blockquote": {
+              "border-color": "@lineColor"
+            }
+          },
+          "_name": "content10",
+          "_customHTML": "<section class=\"content10 mbr-section article\" plugins=\"amp-main\" group=\"Article\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Line Color\" name=\"lineColor\" value=\"#767676\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n    <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\">\n            <div class=\"mbr-text mbr-fonts-style mbr-col-sm-12 mbr-col-md-8\" mbr-theme-style=\"display-7\" data-multiline mbr-article>\n                <blockquote>4. 需要注意的是，因一流学校的建置、学科设置、定位等因素的差别，校内其它采购项目的数额会极大影响公共教学环境投入的占比。例如，作为传统文理综合类大学，北京大学、复旦大学和南京大学的投入占比仅为0.16%、0.07%、0.20%；作为传统工科强校，清华大学、上海交通大学、西安交通大学的投入占比仅为0.24%、0.26%、0.18%。上述两类学校往往因科研仪器、重大项目、基础设施等方面的巨大投入，公共教学环境投入占比不如文科强校或规模体量相对较小的学校，中国人民大学、中央民族大学相关投入占比分别为0.49%、3.78%，明显高于文理综合类和工科强校。</blockquote>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sjNTDQezJi",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content10-2r"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor"
+          },
+          "_name": "content16",
+          "_customHTML": "<section class=\"content16 mbr-section article\" plugins=\"amp-main\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#336a95\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"mbr-text align-center mbr-fonts-style mbr-white mbr-bold mbr-py-4\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text\" mbr-text><i>二、清北复交浙南：一流中的一流如何建设公共教学环境？</i></div>\n    </div>\n</section>",
+          "_anchor": "content16-1y",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise-amp",
+          "_cid": "sj24YyvxKI",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor"
+          },
+          "_name": "content2",
+          "_customHTML": "<section class=\"content2 mbr-section article\" plugins=\"amp-main\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-10 mbr-col-lg-8\">\n                <h3 class=\"mbr-fonts-style mbr-section-title mbr-light mbr-py-1\" mbr-if=\"showTitle\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\">\n                    Free Website Builder\n                </h3>\n                <p class=\"mbr-text mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>【图 待补充】\n<br>\n<br>我们对清华大学、北京大学以及华东五校（复旦大学、上海交通大学、浙江大学、南京大学、中国科学技术大学）进行了数据的提取和具体分析。\n<br><br>在预算支出中，清华大学、北京大学、上海交通大学、浙江大学四校在五年内几乎保持每年支出均超过一百亿元，南京大学则位列最末，平均每年只花费五十亿元左右。各所高校的预算支出受其地理位置、学校规模、学校规划等多重因素影响，南京大学相较其他几所学校而言规模更小，支出也更少。\n<br>从公共环境招标金额来看，几乎和预算相对应地，清华大学、浙江大学在公共环境方面的资金投入更多，年支出金额都曾超过一亿元。其中，清华大学对公共环境的支出在2019年呈陡然上升的趋势，但在2020年回归到五百万元左右，而浙江大学的峰值出现在2020年。公共环境招标金额最少的依然是南京大学，其于2018年投入最多，金额大约为一百万元，是清华大学最高值的十分之一。\n<br><br>但根据投入占比数据，中国科学技术大学表现最佳。中国科学技术大学的公共环境投入占比在2018年和2020年分别达到了2.62%和1.04%，几乎是其他学校的十倍之多。而复旦大学在2016-2018年、浙江大学在2016和2020年的投入占比也超过了0.5%。其余的四所高校（清华大学、北京大学、上海交通大学、南京大学）的投入占比基本在0.1%-0.5%之间波动，其中北京大学和南京大学的占比相对更小。\n<br>\n<br>【一些具体的实例 待补充】&nbsp;<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sjNU3NdBNh",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content2-2s"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor"
+          },
+          "_name": "content16",
+          "_customHTML": "<section class=\"content16 mbr-section article\" plugins=\"amp-main\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#336a95\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"mbr-text align-center mbr-fonts-style mbr-white mbr-bold mbr-py-4\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text\" mbr-text><i>三、南京大学仙林校区：公共教学环境何以成为师生的切肤之痛？</i></div>\n    </div>\n</section>",
+          "_anchor": "content16-2k",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise-amp",
+          "_cid": "sjNRN9vp7H",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".counter-container": {
+              "li when (@stylizedCounters)": {
+                "list-style": "none",
+                "position": "relative",
+                "&:before": {
+                  "position": "absolute",
+                  "left": "-55px",
+                  "content": "''",
+                  "display": "inline-block",
+                  "margin": "10px 15px",
+                  "line-height": "20px",
+                  "width": "10px",
+                  "height": "10px",
+                  "& when (@countersType = 'circle')": {
+                    "border": "1px solid @counterColor",
+                    "color": "@counterColor"
+                  },
+                  "& when not (@countersType = 'circle')": {
+                    "color": "contrast(@counterColor)",
+                    "background": "@counterColor"
+                  },
+                  "& when not (@countersType = 'square') and not (@countersType = 'romb')": {
+                    "border-radius": "50%"
+                  },
+                  "& when (@countersType = 'romb')": {
+                    "-webkit-transform": "rotate(45deg)",
+                    "transform": "rotate(45deg)"
+                  }
+                }
+              }
+            }
+          },
+          "_name": "content7",
+          "_customHTML": "<section class=\"content7 mbr-section\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\" checked>\n        <input type=\"color\" title=\"Counter Color\" name=\"counterColor\" value=\"#4ea2e3\" condition=\"stylizedCounters\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\" checked>\n        <select title=\"Counters Type\" name=\"countersType\" condition=\"stylizedCounters\">\n            <option value=\"default\">Сircle Fill</option>\n            <option value=\"circle\">Circle</option>\n            <option value=\"square\">Square</option>\n            <option value=\"romb\" selected>Rhombus</option>\n\n        </select>   \n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\">\n            <div class=\"mbr-text counter-container mbr-fonts-style mbr-col-lg-8 mbr-col-md-12 mbr-col-sm-12\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                <ul>\n                    <li class=\"mbr-pb-2\">南京大学仙林校区是南京大学为创建世界一流大学而集全校之力建设的国际化新校区，于2009年9月正式投入使用，2012年成为南京大学主校区。<b>作为仙林校区的公共教学楼，左涤江楼、邵逸夫楼（通常被合称为“逸夫楼”）、思源楼（通常被称作“仙一”）、择善楼（通常被称作“仙二”），承担了大部分本科生课程、公共课程、师生活动、学生自习和考试活动，是仙林校区最重要的“公共教学环境”。 \n</b></li><li class=\"mbr-pb-2\">而上述几座楼自2009年集中投入使用以来，室内装修、设施<b>未有过重大的更新、升级，迄今已十年有余，相关设施不同程度地老化、落后，师生的使用感受不佳，首当其冲的便是公共教学楼的投影设备。</b>来自新闻传播学院的18级本科生<b>菜菜表示：“逸夫楼的投影设备太老了，好多老师课上放视频、学生展示视频都放不出来，只能发链接”</b>，除此之外，音响差强人意的效果、教室电脑陈旧的操作系统也被提及。 \n</li><li class=\"mbr-pb-2\">在调查中，来自<b style=\"font-family: inherit; font-size: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit;\">新闻传播学院老师</b>谈及了对公共教学楼影音设备的不满，由于涉及比较多的操作展示和影像展示，在能够选择的情况下，<b style=\"font-family: inherit; font-size: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit;\">他们更愿意把相关课程安排在学院教室里，以免教学质量受到影响</b>。而艺术学院的老师就没有这么幸运，由于艺术学院不招收本科生，且院楼远在鼓楼校区，<b style=\"font-family: inherit; font-size: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit;\">艺术学院</b>老师主要依托仙林校区的公共教学楼向全校本科生和辅修学生开设公共课程、通识课程和选修课程。而艺术史、艺术实践课程往往涉及大量的影像展示，<b style=\"font-family: inherit; font-size: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit;\">仙林校区公共教室差强人意的投影效果，极大地影响了日常的授课质量。除此之外，地板贴条的脱落、热水设备无法提供温水、桌椅损坏残缺、空调的巨大噪声等问题都被多位受访者提及。&nbsp;&nbsp;</b></li><li class=\"mbr-pb-2\">除了教学设施缺乏更新和维护广受诟病以外，十多年前建筑、设施设计困扰着同学们，比如来自<b>18级历史学院的杠杠</b>着重提及了教学楼公共厕所的问题：<b>“厕所位置太少，女生要排队好久……教学楼厕所很多锁是坏的……女厕所在男厕所前面不合理，洗手的时候会感觉很多男生路过会看”。</b>此外，公共教学楼每幢楼<b>平均两部电梯的设置，让大部分师生在高峰期“无梯可乘”，更勿论电梯频繁的故障。 \n</b></li><li class=\"mbr-pb-2\">在日常的学习生活中，无论来自哪个院系，基数可观的本科同学接触最多的就是公共教学楼和图书馆构建起来的“公共教学环境”；一旦教学环境差强人意，会极大影响师生的教学质量和日常体验。<b>现状如此，南京大学相关部门是否意识到问题，并进行改进呢？ </b>\n</li><li class=\"mbr-pb-2\">在询问本科生院相关负责老师交流时，<b>负责老师也表达了教学运行部门的“无奈”：</b>由于<b>迁入仙林校区的院系和学生越来越多，所开设的相关专业课程、公共课程对公共教学环境压力很大，大规模的改造、升级将造成巨大的教室缺口，因此只能利用寒暑假进行大规模改造或在全年间分批改造。学校原打算在2020年暑期进行环境改造，但因学生在8月间提前返校考试而终止。&nbsp;</b></li>\n                </ul>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sjNVuFdV98",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content7-2u"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text": {
+              "text-align": "left"
+            }
+          },
+          "_name": "content2",
+          "_customHTML": "<section class=\"content2 mbr-section article\" plugins=\"amp-main\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-10 mbr-col-lg-8\">\n                <h3 class=\"mbr-fonts-style mbr-section-title mbr-light mbr-py-1\" mbr-if=\"showTitle\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\">\n                    Free Website Builder\n                </h3>\n                <p class=\"mbr-text mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2020年9月29日，南京大学教学运行服务中心在南京大学本科生院官网上发布了一份题为《关于南京大学公共教室空间改造》的<a href=\"https://jw.nju.edu.cn/92/49/c26263a496201/page.htm\" class=\"text-primary\" target=\"_blank\"><b>调查问卷</b></a>，公共教学环境的改造升级再次成为校园内热议的话题。<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;11月24日，南京大学本科生院发布<a href=\"https://jw.nju.edu.cn/ab/44/c26263a502596/page.htm\" class=\"text-primary\" target=\"_blank\"><b>通知</b></a>，要求在校学生清空逸夫楼A-322和323两间教室内的个人物品，准备在12月初对两间教室进行施工改造，渐次、逐步地改造公共教室似乎已经成为既定安排。本科生院同时在通知中表示：“今年寒假、明年暑假都将有计划地陆续对部分教室进行改造，提升教室舒适度、智能化”，印证了上述说法。 \n<br>\n<br>还需要继续深入分析</p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sjNX8dvt6W",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content2-2w"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor"
+          },
+          "_name": "content16",
+          "_customHTML": "<section class=\"content16 mbr-section article\" plugins=\"amp-main\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#336a95\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"mbr-text align-center mbr-fonts-style mbr-white mbr-bold mbr-py-4\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text\" mbr-text><i>四、云端的教室：疫情后的虚拟教学环境建设</i></div>\n    </div>\n</section>",
+          "_anchor": "content16-2l",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise-amp",
+          "_cid": "sjNROblYqm",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor"
+          },
+          "_name": "content2",
+          "_customHTML": "<section class=\"content2 mbr-section article\" plugins=\"amp-main\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-10 mbr-col-lg-8\">\n                <h3 class=\"mbr-fonts-style mbr-section-title mbr-light mbr-py-1\" mbr-if=\"showTitle\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\">\n                    Free Website Builder\n                </h3>\n                <p class=\"mbr-text mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>词云图：疫情期间一流高校都投入了什么？（待补充）\n<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sjNWZ2bBJ2",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content2-2v"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor"
+          },
+          "_name": "content2",
+          "_customHTML": "<section class=\"content2 mbr-section article\" plugins=\"amp-main\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-10 mbr-col-lg-8\">\n                <h3 class=\"mbr-fonts-style mbr-section-title mbr-light mbr-py-1\" mbr-if=\"showTitle\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-title\">\n                    部分高校对虚拟教学环境的具体投入：\n                </h3>\n                <p class=\"mbr-text mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\" data-multiline mbr-article>&nbsp;</p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sjNYSkz3xo",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content2-2x"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-text": {
+              "color": "#767676"
+            },
+            ".mbr-row": {
+              "margin-left": "-1.5rem",
+              "margin-right": "-1.5rem"
+            }
+          },
+          "_name": "features1",
+          "_customHTML": "<section class=\"features1 mbr-section\" group=\"Features\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"2\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\" selected>2</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background2.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\">\n            <div class=\"card mbr-col-sm-12 mbr-col-md-6 mbr-px-3\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <amp-img src=\"@PROJECT_PATH@/assets/images/-1056x637.jpeg\" layout=\"responsive\" width=\"527.9938438177874\" height=\"297.198\" alt=\"Mobirise\" class=\"mobirise-loader\">\n                            <div placeholder class=\"placeholder\"></div>\n                            <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/-1056x637.jpeg\" alt=\"Mobirise\">\n                        </amp-img>\n                    </div>\n                    <div class=\"card-box mbr-pt-4\">\n                        <h4 class=\"card-title mbr-fonts-style align-left mbr-light\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">南京大学</h4>\n                        <p class=\"mbr-text mbr-fonts-style align-left mbr-pt-1\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">南京大学根据教务处的部署，采取在线直播、微课和SPOC（MOOC）三种方式开展网络教学，为便于教务处监督在线教学，所有老师必须使用“教学立方”平台与学生沟通。 <br>\n<br>教学立方是南京大学线上教学最常使用的工具，教师利用教学立方让学生签到，在平台上分享教学资料、进行实时互动……<b>这款专业的教学设计和辅助工具，大大加强了教师教学的效率，提高了对学生成绩评测的方法。</b><br>为了及时通知到每一个选课学生新的上课方式，<b>教务处技术人员加班开发教服系统新功能。</b>当学生登陆教务系统，可以在“我的课程”里找到老师提前留下的关于本门课程的具体信息。\n<br><br>2月17日，正式开课的第一天，由于大规模师生涌入，<b>教学立方一时有些卡顿，但次日问题就得到了解决。\n</b><b><br></b><br>除了教学立方，教师们还通过钉钉、腾讯会议、Zoom等不同的直播软件在线上和学生进行教学交流。</p>\n                    </div>\n                </div>\n            </div>\n            \n            <div class=\"card mbr-col-sm-12 mbr-col-md-6 mbr-px-3 last-child\" mbr-if=\"cardsAmount > 1\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <amp-img src=\"@PROJECT_PATH@/assets/images/-1056x607.jpeg\" layout=\"responsive\" height=\"297.073\" width=\"527.99366185567\" alt=\"Mobirise\" class=\"mobirise-loader\">\n                            <div placeholder class=\"placeholder\"></div>\n                            <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/-1056x607.jpeg\" alt=\"Mobirise\">\n                        </amp-img>\n                    </div>\n                    <div class=\"card-box mbr-pt-4\">\n                        <h4 class=\"card-title mbr-fonts-style align-left mbr-light\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            清华大学</h4>\n                        <p class=\"mbr-text mbr-fonts-style align-left mbr-pt-1\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">清华大学“2020全校师生同一堂课”宣布，<b>由清华自主研发、拥有3200余万学习者的全球学习者规模第二大慕课平台学堂在线，</b>将向社会免费开放1600多门慕课课程。<br><br>除了推进本校在线教学外，清华大学还将把使用雨课堂在线教学技术平台的上千门课程向兄弟学校开放，建立雨课堂的“克隆班”，让其他学校的师生同步共享清华课程，同步上课、同步做题、同步互动。&nbsp;<br></p>\n                    </div>\n                </div>\n            </div>\n            \n        </div>\n    </div>\n</section>",
+          "_cid": "sjNZxJwySo",
+          "_anchor": "features1-2y",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {},
+          "_name": "features2",
+          "_customHTML": "<section class=\"features2 mbr-section\" group=\"Features\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"2\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <!-- <input type=\"checkbox\" title=\"Show Lines\" name=\"showLines\" checked> -->\n        <!-- <input type=\"color\" title=\"Lines Color\" name=\"linesColor\" value=\"#efefef\" condition=\"showLines\"> -->\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background2.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\">\n            <div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{'mbr-col-lg-4 md-pb': cardsAmount == 3,\n                             'mbr-col-lg-3 md-pb': cardsAmount == 4,\n                             'mbr-px-3': cardsAmount < 4,\n                             'last-child': cardsAmount == 1}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <amp-img src=\"@PROJECT_PATH@/assets/images/-659x289.jpeg\" layout=\"responsive\" width=\"329.9831463414634\" height=\"185.333\" alt=\"Mobirise\" class=\"mobirise-loader\">\n                            <div placeholder class=\"placeholder\"></div>\n                            <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/-659x289.jpeg\" alt=\"Mobirise\">\n                        </amp-img>\n                    </div>\n                    <div class=\"card-box mbr-pt-4\">\n                        <h4 class=\"card-title mbr-fonts-style align-left mbr-light\" mbr-class=\"{'mbr-pb-1':showText}\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            中国人民大学</h4>\n                        <p class=\"mbr-text mbr-fonts-style align-left\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><br>中国人民大学把思政课程线上教学建设放在首位，通过建设先进平台、汇聚一流师资、共享优质资源、创新教学模式，将“思政金课”全面移植到网络平台上。\n<br><br>思政课通过“思政云课堂”全面开展线上教学，提供思政课精讲、重难点解析、专题讲解等视频课程，以及教学课件、测试题库等丰富的教学资源、学习资源，并且<b>提供全流程的教学互动工具，能为在线数字化教学提供完整的解决方案。&nbsp;</b><br></p>\n                        <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\">\n                            <a class=\"btn btn-sm btn-secondary\" href=\"https://mobiri.se\">\n                                LEARN MORE\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            \n            <div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{'mbr-col-lg-4 md-pb': cardsAmount == 3,\n                             'mbr-col-lg-3 md-pb': cardsAmount == 4,\n                             'mbr-px-3': cardsAmount < 4,\n                             'last-child': cardsAmount == 2}\" mbr-if=\"cardsAmount > 1\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <amp-img src=\"@PROJECT_PATH@/assets/images/-587x382.jpeg\" layout=\"responsive\" height=\"185.646\" width=\"329.9744451219512\" alt=\"Mobirise\" class=\"mobirise-loader\">\n                            <div placeholder class=\"placeholder\"></div>\n                            <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/-587x382.jpeg\" alt=\"Mobirise\">\n                        </amp-img>\n                    </div>\n                    <div class=\"card-box mbr-pt-4\">\n                        <h4 class=\"card-title mbr-fonts-style align-left mbr-light\" mbr-class=\"{'mbr-pb-1':showText}\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">浙江大学</h4>\n                        <p class=\"mbr-text mbr-fonts-style align-left\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><br>浙江大学基于钉钉平台搭建了自己的<b>\"浙大钉\"APP</b>，实现了全校师生的组织在线，7万余师生在同一个平台，保证了体验的统一性。借助钉钉平台稳定的在线直播能力，全校3000多名老师可以在钉钉上开网课，直播结束后生成视频上传到\"学在浙大\"平台供学生进行复习观看。通过基于钉钉搭建的\"浙大钉\"和学校内部的\"学在浙大\"平台，浙江大学给师生提供了完整的在线网课体验。\n<br><br>不仅如此，基于阿里云的\"浙大云\"聚合校内专有云的安全稳定与阿里云公共云的弹性能力，<b>在校园与阿里云之间搭建起10Gbps的光纤专线，混合云模式解决了校内科研及教学所需的计算力和海量资源问题。</b>同时，阿里云遍布全球的2500个CDN节点和120T带宽，也为钉钉群直播、视频会议等提供强有力的支持。</p>\n                        <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\">\n                            <a class=\"btn btn-sm btn-secondary\" href=\"https://mobiri.se\">\n                                LEARN MORE\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{'mbr-col-lg-4': cardsAmount == 3,\n                             'mbr-col-lg-3': cardsAmount == 4,\n                             'mbr-px-3': cardsAmount < 4,\n                             'last-child': cardsAmount == 3}\" mbr-if=\"cardsAmount > 2\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <amp-img src=\"@PROJECT_PATH@/assets/images/-516x349.jpeg\" layout=\"responsive\" height=\"185.458\" width=\"329.98733793103446\" alt=\"Mobirise\" class=\"mobirise-loader\">\n                            <div placeholder class=\"placeholder\"></div>\n                            <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/-516x349.jpeg\" alt=\"Mobirise\">\n                        </amp-img>\n                    </div>\n                    <div class=\"card-box mbr-pt-4\">\n                        <h4 class=\"card-title mbr-fonts-style align-left mbr-light\" mbr-class=\"{'mbr-pb-1':showText}\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">天津大学</h4>\n                        <p class=\"mbr-text mbr-fonts-style align-left\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">天津大学本科教学<b>组建了多个各级各类专业化工作队伍，</b>在线教学专家组提出的教学建议涵盖课程设计、直播内容、双平台结合、管理方式、学情动态等方面；在线技术保障组密切关注开学第一周各大教学平台运行情况，制订切实可行的预警和保障措施；在线质量保障专家组建立了校院两级全面覆盖的在线教学督导队伍，构建了完备的在线教学质量保障体系。研究生教学则面向千余名一线教师建立起4个技术支持大群，协同校内线上教学专家、平台技术人员连续维护了20余天，每天做好教学服务，迅速响应、答疑释惑、汇总资源、定时发送。\n<br>\t<br>云开课的前一周起，在线教学各位专家、校院两级教学管理人员全天在线，连续日夜工作，协助师生处理各种问题，保障平稳开课。<b>“雨课堂”“超星学习通”“中国大学MOOC”“智慧树”四大线上教学平台技术人员为授课教师提供了专门的技术支持，不间断服务。</b></p>\n                        <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\">\n                            <a class=\"btn btn-sm btn-secondary\" href=\"https://mobiri.se\">\n                                LEARN MORE\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{'mbr-col-lg-4': cardsAmount == 3,\n                             'mbr-col-lg-3': cardsAmount == 4,\n                             'mbr-px-3': cardsAmount < 4,\n                             'last-child': cardsAmount == 4}\" mbr-if=\"cardsAmount > 3\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <amp-img src=\"@THEME_PATH@/components/_images/img/03.jpg\" layout=\"responsive\" height=\"9\" width=\"16\" alt=\"Mobirise\" class=\"mobirise-loader\">\n                            <div placeholder class=\"placeholder\"></div>\n                            <img class=\"mbr-temp\" src=\"@THEME_PATH@/components/_images/img/03.jpg\" alt=\"Mobirise\">\n                        </amp-img>\n                    </div>\n                    <div class=\"card-box mbr-pt-4\">\n                        <h4 class=\"card-title mbr-fonts-style align-left mbr-light\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            Results\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style align-left\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                            Publishers and advertisers can decide how to present their content and what technology vendors to use, all while maintaining and improving key performance indicators.\n                        </p>\n                        <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\">\n                            <a class=\"btn btn-sm btn-secondary\" href=\"https://mobiri.se\">\n                                LEARN MORE\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            \n        </div>\n    </div>\n</section>",
+          "_cid": "sjO01M4GPF",
+          "_anchor": "features2-2z",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            }
+          },
+          "_name": "content1",
+          "_customHTML": "<section class=\"mbr-section content1\" group=\"Article\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background2.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#efefef\" selected>\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n     <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"mbr-title align-center mbr-fonts-style mbr-bold mbr-pb-2\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-title\">\n                    数据公开</h2>\n                <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-5 mbr-pt-1 mbr-pb-3\">\n                    <i>Shape your future web project with sharp design and refine coded functions.</i>\n                </h3>\n                <div class=\"mbr-section-btn align-center mbr-pt-3\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove\">\n                    <a class=\"btn btn-primary\" href=\"https://mobiri.se\">LEARN MORE</a>\n                    <a class=\"btn btn-black-outline\" href=\"https://mobiri.se\">LIVE DEMO</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content1-2m",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise-amp",
+          "_cid": "sjNSrKMEox",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor"
+          },
+          "_name": "content16",
+          "_customHTML": "<section class=\"content16 mbr-section article\" plugins=\"amp-main\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#388192\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"mbr-text align-center mbr-fonts-style mbr-white mbr-bold mbr-py-4\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" mbr-text><i>——数据概况</i></div>\n    </div>\n</section>",
+          "_anchor": "content16-2d",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise-amp",
+          "_cid": "sjfh2OlLbS",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {},
+          "_name": "features2",
+          "_customHTML": "<section class=\"features2 mbr-section\" group=\"Features\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"4\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <!-- <input type=\"checkbox\" title=\"Show Lines\" name=\"showLines\" checked> -->\n        <!-- <input type=\"color\" title=\"Lines Color\" name=\"linesColor\" value=\"#efefef\" condition=\"showLines\"> -->\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\" selected>2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background2.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\">\n            <div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{'mbr-col-lg-4 md-pb': cardsAmount == 3,\n                             'mbr-col-lg-3 md-pb': cardsAmount == 4,\n                             'mbr-px-3': cardsAmount < 4,\n                             'last-child': cardsAmount == 1}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <amp-img src=\"@PROJECT_PATH@/assets/images/-976x685.png\" layout=\"responsive\" width=\"519.9963569230769\" height=\"352.448\" alt=\"爬取数据逻辑\" class=\"mobirise-loader\">\n                            <div placeholder class=\"placeholder\"></div>\n                            <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/-976x685.png\" alt=\"爬取数据逻辑\">\n                        </amp-img>\n                    </div>\n                    <div class=\"card-box mbr-pt-4\">\n                        <h4 class=\"card-title mbr-fonts-style align-left mbr-light\" mbr-class=\"{'mbr-pb-1':showText}\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>\n                            政府招标网数据获取概况 \n                        </b></h4>\n                        <p class=\"mbr-text mbr-fonts-style align-left\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><br>如图所示，最左侧是爬取数据的流程逻辑，右上角图片是部分爬取数据，右下角图片是具体数据情况。\n<br><br><br>我们通过<a href=\"http://search.ccgp.gov.cn/bxsearch?searchtype=\" class=\"text-primary\" target=\"_blank\"><b>政府招标网</b></a>，以关键词“xx大学”进行标题检索（如：南京大学）；时间范围定义为2016~2019年每年的1月1日至12月31日，2020年的1月1日至11月21日，最终采集到了包括国内36所双一流高校近五年的招标数据信息，接着手动筛选出与公共教学环境相关的预算数据。<br><br><br><i>百度网盘数据下载提取码：</i>fe9z <br></p>\n                        <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-sm btn-primary\" href=\"https://pan.baidu.com/s/10UUoLLUlKWpym8KS8NHtaw\" data-app-placeholder=\"Type Text\" target=\"_blank\">\n                                DOWNLOAD&nbsp; DATA</a></div>\n                    </div>\n                </div>\n            </div>\n            \n            <div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{'mbr-col-lg-4 md-pb': cardsAmount == 3,\n                             'mbr-col-lg-3 md-pb': cardsAmount == 4,\n                             'mbr-px-3': cardsAmount < 4,\n                             'last-child': cardsAmount == 2}\" mbr-if=\"cardsAmount > 1\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <amp-img src=\"@PROJECT_PATH@/assets/images/-1056x715.png\" layout=\"responsive\" height=\"352.083\" width=\"519.9995076923078\" alt=\"Mobirise\" class=\"mobirise-loader\">\n                            <div placeholder class=\"placeholder\"></div>\n                            <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/-1056x715.png\" alt=\"Mobirise\">\n                        </amp-img>\n                    </div>\n                    <div class=\"card-box mbr-pt-4\">\n                        <h4 class=\"card-title mbr-fonts-style align-left mbr-light\" mbr-class=\"{'mbr-pb-1':showText}\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>\n                            公共教学环境投入筛选情况\n                        </b></h4>\n                        <p class=\"mbr-text mbr-fonts-style align-left\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><br>如图所示，最左侧是筛选过程中保留的公告类型，右上图显示的是部分筛选数据文件，右下图是我们的数据保留情况与投入金额汇总。其中，原资金数据列显示“详见公告正文”的，我们都返回源网页进行了重新登记。 <br>\n<br>我们依据本次调查所关注的“公共教学环境”的<a href=\"index.html#toggle1-22\" class=\"text-primary\"><b>定义范围</b></a>及以下标准来筛选数据： \n<br>1、 若有，保留“成交公告”、“单一来源公告和公示”、“竞争性磋商公告”、“竞争性谈判公告”、“其他/其它公告”以及“中标公告”；\n<br>2、注意事项： 具体采集的时候会遇到纠结的采购事项：按照是否能够服务于公共教学环境、在线教学环境、自习自修环境、软件使用环境改善进行判断。<br><br><i>百度网盘数据下载提取码：</i>etp7<br></p>\n                        <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-sm btn-primary\" href=\"https://pan.baidu.com/s/13S8MJ7zhL9NAqMAqp0vWxA \" data-app-placeholder=\"Type Text\" target=\"_blank\">\n                                DOWNLOAD&nbsp; DATA</a></div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{'mbr-col-lg-4': cardsAmount == 3,\n                             'mbr-col-lg-3': cardsAmount == 4,\n                             'mbr-px-3': cardsAmount < 4,\n                             'last-child': cardsAmount == 3}\" mbr-if=\"cardsAmount > 2\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <amp-img src=\"@PROJECT_PATH@/assets/images/02.jpg\" layout=\"responsive\" height=\"9\" width=\"16\" alt=\"Mobirise\" class=\"mobirise-loader\">\n                            <div placeholder class=\"placeholder\"></div>\n                            <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/02.jpg\" alt=\"Mobirise\">\n                        </amp-img>\n                    </div>\n                    <div class=\"card-box mbr-pt-4\">\n                        <h4 class=\"card-title mbr-fonts-style align-left mbr-light\" mbr-class=\"{'mbr-pb-1':showText}\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            Flexibility\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style align-left\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                            Publishers and advertisers can decide how to present their content and what technology vendors to use, all while maintaining and improving key performance indicators.\n                        </p>\n                        <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\">\n                            <a class=\"btn btn-sm btn-secondary\" href=\"https://mobiri.se\">\n                                LEARN MORE\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{'mbr-col-lg-4': cardsAmount == 3,\n                             'mbr-col-lg-3': cardsAmount == 4,\n                             'mbr-px-3': cardsAmount < 4,\n                             'last-child': cardsAmount == 4}\" mbr-if=\"cardsAmount > 3\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <amp-img src=\"@PROJECT_PATH@/assets/images/03.jpg\" layout=\"responsive\" height=\"9\" width=\"16\" alt=\"Mobirise\" class=\"mobirise-loader\">\n                            <div placeholder class=\"placeholder\"></div>\n                            <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/03.jpg\" alt=\"Mobirise\">\n                        </amp-img>\n                    </div>\n                    <div class=\"card-box mbr-pt-4\">\n                        <h4 class=\"card-title mbr-fonts-style align-left mbr-light\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            Results\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style align-left\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                            Publishers and advertisers can decide how to present their content and what technology vendors to use, all while maintaining and improving key performance indicators.\n                        </p>\n                        <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\">\n                            <a class=\"btn btn-sm btn-secondary\" href=\"https://mobiri.se\">\n                                LEARN MORE\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            \n        </div>\n    </div>\n</section>",
+          "_anchor": "features2-2a",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise-amp",
+          "_cid": "sjfgO3B7rU",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "img": {
+              "object-fit": "contain"
+            },
+            ".item, .group-title": {
+              "color": "#efefef"
+            },
+            "@media (max-width: 767px)": {
+              ".items-col": {
+                "margin": "2rem 0"
+              }
+            },
+            ".item, .items": {
+              "text-align": "center"
+            },
+            ".group-title": {
+              "text-align": "center"
+            }
+          },
+          "_name": "footer2",
+          "_customHTML": "<section class=\"footer4\" group=\"Footers\" plugins=\"amp-main\" global=\"\" once=\"footer\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n\n        <select title=\"Columns\" name=\"columnsCount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\" selected=\"\">2</option>\n            <option value=\"3\">3</option>\n        </select>\n\n        <input type=\"checkbox\" title=\"Show Column Title\" name=\"showTitle\" checked=\"\">\n        <input type=\"range\" inline=\"\" title=\"Column 1 Items\" name=\"columnItems1\" min=\"1\" max=\"6\" value=\"3\">\n        <input type=\"range\" inline=\"\" title=\"Column 2 Items\" name=\"columnItems2\" min=\"1\" max=\"6\" value=\"3\" condition=\"columnsCount > 1\">\n        <input type=\"range\" inline=\"\" title=\"Column 3 Items\" name=\"columnItems3\" min=\"1\" max=\"6\" value=\"3\" condition=\"columnsCount > 2\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background6.jpg\" selected=\"\">\n            <input type=\"color\" title=\"Background Color\" value=\"#232323\">\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\">\n            <div class=\"image-block mbr-col-sm-12 mbr-col-md-3\">\n                <amp-img src=\"@THEME_PATH@/components/_images/background3.jpg\" layout=\"responsive\" width=\"358.93280000000004\" height=\"224.333\" alt=\"Mobirise\" class=\"mobirise-loader\">\n                    <div placeholder=\"\" class=\"placeholder\"></div>\n                    <img class=\"mbr-temp\" src=\"@THEME_PATH@/components/_images/background3.jpg\" alt=\"Mobirise\">\n                </amp-img>\n            </div>\n\n            <div class=\"items-col mbr-col-sm-12 align-right\" mbr-class=\"{'mbr-col-md-3': columnsCount == 3,\n                             'mbr-col-md-4': columnsCount <= 2}\">\n                <h3 class=\"mbr-fonts-style group-title mbr-bold mbr-pb-3\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".group-title\">\n                    Contacts</h3>\n                <div class=\"items\" mbr-list=\"\" mbr-list-grow=\"columnItems1\">\n                    <p class=\"item mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" data-app-selector=\".item, .items\">\n                        About Us\n                    </p>\n                    <p class=\"item mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" data-app-selector=\".item, .items\">\n                        Services\n                    </p>\n                    <p class=\"item mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" data-app-selector=\".item, .items\">\n                        Get In Touch\n                    </p>\n                </div>\n            </div>\n\n            <div class=\"items-col mbr-col-sm-12 align-right\" mbr-class=\"{'mbr-col-md-3': columnsCount == 3,\n                             'mbr-col-md-4': columnsCount <= 2}\" mbr-if=\"columnsCount > 1\">\n                <h3 class=\"mbr-fonts-style group-title mbr-bold mbr-pb-3\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".group-title\">\n                    Address</h3>\n                <div class=\"items\" mbr-list=\"\" mbr-list-grow=\"columnItems2\">\n                    <p class=\"item mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" data-app-selector=\".item, .items\"><b>\n                        163 Xianlin Street, Nanjing, <br>Jiangsu Province 210023\n                    </b></p>\n                    <p class=\"item mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" data-app-selector=\".item, .items\">&nbsp;</p>\n                    <p class=\"item mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" data-app-selector=\".item, .items\">&nbsp;</p>\n                </div>\n            </div>\n\n            <div class=\"items-col mbr-col-sm-12 align-right\" mbr-class=\"{'mbr-col-md-3': columnsCount == 3,\n                             'mbr-col-md-4': columnsCount <= 2}\" mbr-if=\"columnsCount > 2\">\n                <h3 class=\"mbr-fonts-style group-title mbr-bold mbr-pb-3\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".group-title\">\n                    Links\n                </h3>\n                <div class=\"items\" mbr-list=\"\" mbr-list-grow=\"columnItems3\">\n                    <p class=\"item mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" data-app-selector=\".item, .items\">\n                        Website Builder\n                    </p>\n                    <p class=\"item mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" data-app-selector=\".item, .items\">\n                        Download for Mac\n                    </p>\n                    <p class=\"item mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" data-app-selector=\".item, .items\">\n                        Download for Windows\n                    </p>\n                </div>\n            </div>\n\n        </div>\n    </div>\n</section>",
+          "_cid": "sg2zjYknzW",
+          "_anchor": "footer2-7",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footer",
+          "_params": {}
+        }
+      ]
+    },
+    "page5.html": {
+      "settings": {
+        "title": "COVID2019",
+        "order": 3
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@menuBgColor",
+            "overflow": "visible",
+            ".navbar": {
+              "background": "@menuBgColor"
+            },
+            ".builder-sidebar, .dropdown-menu": {
+              "background-color": "@menuBgColor"
+            },
+            ".close-sidebar": {
+              "&:focus": {
+                "outline": "2px auto @primaryColor"
+              },
+              "span": {
+                "background-color": "@hamburgerColor"
+              }
+            },
+            ".ampstart-btn, amp-sidebar": {
+              "display": "block",
+              "&:focus": {
+                "outline": "none"
+              }
+            },
+            ".nav-dropdown a": {
+              "padding": "0.5rem 0 !important",
+              "margin": "0 0 10px !important"
+            },
+            ".navbar .navbar-collapse": {
+              "display": "none",
+              "&.show": {
+                "display": "block",
+                "position": "absolute",
+                "top": "0",
+                "& when (@sidebarSide = 'right')": {
+                  "right": "0"
+                },
+                "& when (@sidebarSide = 'left')": {
+                  "right": "auto",
+                  "left": "0"
+                },
+                "height": "100vh",
+                "overflow-y": "auto",
+                "padding": "70px 2rem 1rem",
+                "z-index": "1",
+                "background": "@menuBgColor"
+              }
+            },
+            ".dropdown.open > .dropdown-menu, .dropdown:hover > .dropdown-menu, .dropdown-item.dropdown-toggle": {
+              "left": "0",
+              "position": "relative"
+            },
+            "@media (min-width: 992px)": {
+              ".dropdown-menu .dropdown-toggle:after": {
+                "transform": "rotate(90deg)"
+              }
+            },
+            ".hamburger span": {
+              "background-color": "@hamburgerColor"
+            },
+            "amp-img": {
+              "height": "~\"@{logoHeight}px\"",
+              "width": "~\"@{logoWidth}px\"",
+              "img": {
+                "object-fit": "contain"
+              }
+            },
+            ".brand-name": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "menu1",
+          "_customHTML": "<section class=\"menu  horizontal-menu\" group=\"Menu\" plugins=\"amp-main,amp-sidebar\" global once=\"menu\" always-top position-absolute>\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked>\n        <input type=\"range\" title=\"Logo Height\" inline name=\"logoHeight\" min=\"35\" max=\"120\" value=\"55\" step=\"1\">\n        <input type=\"range\" title=\"Logo Width\" inline name=\"logoWidth\" min=\"35\" max=\"120\" value=\"45\" step=\"1\">\n\n        <input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\" checked>\n        <input type=\"checkbox\" title=\"Show Links\" name=\"showLinks\" checked>\n        <input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked>\n        <select title=\"Sidebar Side\" name=\"sidebarSide\">\n            <option value=\"left\">Left</option>\n            <option value=\"right\" selected>Right</option>\n        </select>\n        <input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#000000\">\n        <input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <nav class=\"navbar navbar-dropdown\" mbr-class=\"{'navbar-fixed-top': sticky}\">\n    <div class=\"menu-container mbr-jc-s container-fluid\">\n      <div class=\"navbar-brand\">\n          <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n              <amp-img src=\"@PROJECT_PATH@/assets/images/-90x90.jpg\" layout=\"responsive\" width=\"45\" height=\"45\" alt=\"Mobirise\" class=\"mobirise-loader\">\n                  <div placeholder class=\"placeholder\"></div>\n                  <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/-90x90.jpg\" alt=\"Mobirise\">\n              </amp-img>\n          </span>\n          <p mbr-text mbr-theme-style=\"display-7\" mbr-if=\"showBrand\" class=\"brand-name mbr-fonts-style mbr-bold\" data-app-selector=\".brand-name\">Data Journalism And Data-driven Journalism</p>\n      </div>\n        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n      <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showLinks || showButtons\">\n        <div class=\"hamburger\">\n          <span></span>\n          <span></span>\n          <span></span>\n          <span></span>\n        </div>\n        </button>\n        <!-- NAVBAR ITEMS -->\n        <ul mbr-menu class=\"navbar-nav nav-dropdown mbr-column\" mbr-theme-style=\"display-7\" mbr-if=\"showLinks\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item dropdown open\">\n            <a class=\"nav-link link text-secondary dropdown-toggle\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" data-toggle=\"dropdown-submenu\" aria-expanded=\"true\">Home</a><div class=\"dropdown-menu\"><div class=\"dropdown open\"><a class=\"text-secondary dropdown-item dropdown-toggle\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" data-toggle=\"dropdown-submenu\" aria-expanded=\"true\">附加知识</a><div class=\"dropdown-menu dropdown-submenu\"><a class=\"text-secondary dropdown-item text-primary\" href=\"http://www.gov.cn/xinwen/2017-01/27/content_5163903.htm#1\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" target=\"_blank\">教育部：《统筹推进世界一流大学和<br>一流学科建设实施办法（暂行）》</a><a class=\"text-secondary dropdown-item text-primary\" href=\"http://www.moe.gov.cn/s78/A22/A22_ztzl/ztzl_tjsylpt/sylpt_zcwj/\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\" target=\"_blank\">“双一流”建设政策文件</a></div></div></div>\n          </li></ul>\n        <!-- NAVBAR ITEMS END -->\n        <!-- SHOW BUTTON -->\n        <div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-7\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-md btn-black mbr-bold\" href=\"#\" data-app-placeholder=\"Type Text\">Join us</a></div>\n        <!-- SHOW BUTTON END -->\n      </div>\n      <!-- COLLAPSED MENU END -->\n      <button class=\"navbar-toggler hide\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showLinks || showButtons\">\n      <div class=\"hamburger\">\n        <span></span>\n        <span></span>\n        <span></span>\n        <span></span>\n      </div>\n      </button>\n      <button on=\"tap:sidebar.toggle\" class=\"ampstart-btn hamburger\" mbr-if=\"(showLinks||showButtons)\">\n        <span></span>\n        <span></span>\n        <span></span>\n        <span></span>\n      </button>\n    </div>\n  </nav>\n  <!-- AMP plug -->\n  <amp-sidebar id=\"sidebar\" layout=\"nodisplay\" side=\"{{sidebarSide}}\">\n    <div class=\"builder-sidebar\" id=\"builder-sidebar\">\n      <button on=\"tap:sidebar.close\" class=\"close-sidebar\">\n      <span></span>\n      <span></span>\n      </button>\n    </div>\n  </amp-sidebar>\n    \n</section>",
+          "_cid": "sg2E75DTV6",
+          "_anchor": "menu1-r",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "menu",
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            "img": {
+              "object-fit": "cover"
+            },
+            "@media (min-width: 768px)": {
+              ".image-block when (@flexDirection)": {
+                "padding-left": "2rem"
+              },
+              ".image-block when not (@flexDirection)": {
+                "padding-right": "2rem"
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".image-block": {
+                "padding-bottom": "1rem"
+              }
+            }
+          },
+          "_name": "features10",
+          "_customHTML": "<section class=\"features10\" group=\"Features\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"2\" step=\"1\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"2\" step=\"1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\" checked=\"\">\n        <input type=\"checkbox\" title=\"Media on Left/Right\" name=\"flexDirection\">\n\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n       \n    <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\" mbr-class=\"{'mbr-row-reverse': flexDirection}\">\n            <div class=\"image-block mbr-col-sm-12 mbr-col-md-6 \">\n                <amp-img src=\"@THEME_PATH@/components/_images/img/02.jpg\" layout=\"responsive\" width=\"533.9685\" height=\"355.979\" alt=\"Mobirise\" class=\"mobirise-loader\">\n                    <div placeholder=\"\" class=\"placeholder\"></div>\n                    <img class=\"mbr-temp\" src=\"@THEME_PATH@/components/_images/img/02.jpg\" alt=\"Mobirise\">\n                </amp-img>\n            </div>\n            <div class=\"text-block mbr-col-sm-12 mbr-col-md-6 mbr-m-auto\">\n                <h3 class=\"mbr-section-title mbr-fonts-style align-left mbr-pt-1 mbr-pb-3\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                    WHAT CAN MOBILE OPTIMIZATION DO FOR YOU?\n                </h3>\n                <p class=\"mbr-fonts-style mbr-text align-left mbr-pt-1 mbr-pb-3\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                   Conversions fall by 12% for every extra second a webpage takes to load. If you want people to engage with your brand and improve the performance of your campaigns, you have to speed things up. AMP offers a way for you to give users a faster experience everywhere -- on ads, landing pages or your entire website.\n                </p>\n                <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons=\"\" mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-sm btn-primary\" href=\"https://mobiri.se\">READ MORE</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>\n",
+          "_cid": "sghAVgEWZX",
+          "_anchor": "features10-v",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".slider-box when (@showTitle), (@showSubtitle)": {
+              "margin-top": "2rem"
+            },
+            ".slider-box when (@showText), (@showButtons)": {
+              "margin-bottom": "2rem"
+            },
+            "amp-img": {
+              "cursor": "pointer",
+              "position": "relative"
+            },
+            "@media (max-width: 767px)": {
+              ".carousel-img": {
+                "margin": "0"
+              },
+              ".amp-carousel-button": {
+                "display": "none"
+              }
+            },
+            "amp-img:after, .icon-wrap": {
+              "position": "absolute",
+              "opacity": "0",
+              "pointer-events": "none",
+              "transition": "opacity .3s"
+            },
+            "amp-img:after": {
+              "content": "\"\"",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "top": "0",
+              "background-color": "@imgOverlayColor"
+            },
+            ".icon-wrap": {
+              "width": "~\"@{iconsSize}rem\"",
+              "height": "~\"@{iconsSize}rem\"",
+              "left": "50%",
+              "top": "50%",
+              "transform": "translate(-50%, -50%)",
+              ".amp-iconfont": {
+                "font-size": "~\"@{iconsSize}rem\"",
+                "width": "~\"@{iconsSize}rem\"",
+                "color": "contrast(@imgOverlayColor, darken(@imgOverlayColor, 50%), #ffffff, 60%)"
+              }
+            },
+            ".carousel-img:hover": {
+              "amp-img:after": {
+                "opacity": "@imgOverlayOpacity"
+              },
+              ".icon-wrap": {
+                "opacity": "1"
+              }
+            }
+          },
+          "_name": "slider4",
+          "_customHTML": "<section class=\"slider4 slider\" group=\"Carousels &amp; Sliders\" plugins=\"amp-main,amp-carousel,amp-image-lightbox\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        \n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"show Buttons\" name=\"showButtons\">\n        \n        <input type=\"checkbox\" title=\"Autoplay\" name=\"autoplay\" checked=\"\" condition=\"imagesAmount > 1 &amp;&amp; typeSlide != 'carousel'\">\n            <input type=\"range\" inline=\"\" title=\"Delay\" name=\"delay\" min=\"1000\" max=\"5000\" step=\"1000\" value=\"3000\" condition=\"autoplay &amp;&amp; imagesAmount > 1 &amp;&amp; typeSlide != 'carousel'\">\n        \n        <select title=\"Images\" name=\"imagesAmount\">\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\" selected=\"\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\">6</option>\n        </select>\n        \n        <input type=\"range\" inline=\"\" title=\"Icons Size\" name=\"iconsSize\" min=\"1\" max=\"3\" step=\"0.1\" value=\"2\">\n\n        <input type=\"color\" title=\"Image Overlay Color\" name=\"imgOverlayColor\" value=\"#4ea2e3\">\n        <input type=\"range\" inline=\"\" title=\"Image Overlay Opacity\" name=\"imgOverlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background6.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected=\"\">\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <h3 class=\"mbr-fonts-style mbr-section-title mbr-light align-center\" mbr-if=\"showTitle\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\">Slider With Lightbox</h3>\n        <h4 class=\"mbr-fonts-style mbr-section-subtitle mbr-light align-center\" mbr-if=\"showSubtitle\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-subtitle\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore incidunt molestias, vitae recusandae error ipsam distinctio, ipsum.</h4>\n        <div class=\"slider-box\" data-autoplay=\"{{autoplay}}\" data-delay=\"{{delay}}\"><amp-carousel class=\"carousel\" width=\"13.5\" height=\"9\" layout=\"responsive\" type=\"slides\"><div class=\"carousel-img\">\n                    <amp-img class=\"mobirise-loader\" src=\"@THEME_PATH@/components/_images/img/05.jpg\" alt=\"Mobirise\" width=\"13.5\" height=\"9\" layout=\"responsive\" on=\"tap:lightbox1\" role=\"button\" tabindex=\"0\">\n                        <div placeholder=\"\" class=\"placeholder\"></div>\n                        <img class=\"mbr-temp\" src=\"@THEME_PATH@/components/_images/img/05.jpg\" alt=\"Mobirise\" title=\"\">\n                    </amp-img>\n                    <div class=\"icon-wrap\" on=\"tap:lightbox1\" role=\"button\" tabindex=\"0\">\n                        <span mbr-icon=\"\" class=\"amp-iconfont mbri-search\"></span>\n                    </div>\n                </div><div class=\"carousel-img\">\n                    <amp-img class=\"mobirise-loader\" src=\"@THEME_PATH@/components/_images/img/01.jpg\" alt=\"Mobirise\" width=\"13.5\" height=\"9\" layout=\"responsive\" on=\"tap:lightbox1\" role=\"button\" tabindex=\"0\">\n                            <div placeholder=\"\" class=\"placeholder\"></div>\n                            <img class=\"mbr-temp\" src=\"@THEME_PATH@/components/_images/img/01.jpg\" alt=\"Mobirise\">\n                    </amp-img>\n                    <div class=\"icon-wrap\" on=\"tap:lightbox1\" role=\"button\" tabindex=\"0\">\n                        <span mbr-icon=\"\" class=\"amp-iconfont mbri-search\"></span>\n                    </div>\n                </div><div class=\"carousel-img\">\n                    <amp-img class=\"mobirise-loader\" src=\"@THEME_PATH@/components/_images/img/02.jpg\" alt=\"Mobirise\" width=\"13.5\" height=\"9\" layout=\"responsive\" on=\"tap:lightbox1\" role=\"button\" tabindex=\"0\">\n                        <div placeholder=\"\" class=\"placeholder\"></div>\n                        <img class=\"mbr-temp\" src=\"@THEME_PATH@/components/_images/img/02.jpg\" alt=\"Mobirise\">\n                    </amp-img>\n                    <div class=\"icon-wrap\" on=\"tap:lightbox1\" role=\"button\" tabindex=\"0\">\n                        <span mbr-icon=\"\" class=\"amp-iconfont mbri-search\"></span>\n                    </div>\n                </div><div class=\"carousel-img\">\n                    <amp-img class=\"mobirise-loader\" src=\"@THEME_PATH@/components/_images/img/03.jpg\" alt=\"Mobirise\" width=\"13.5\" height=\"9\" layout=\"responsive\" on=\"tap:lightbox1\" role=\"button\" tabindex=\"0\">\n                        <div placeholder=\"\" class=\"placeholder\"></div>\n                        <img class=\"mbr-temp\" src=\"@THEME_PATH@/components/_images/img/03.jpg\" alt=\"Mobirise\">\n                    </amp-img>\n                    <div class=\"icon-wrap\" on=\"tap:lightbox1\" role=\"button\" tabindex=\"0\">\n                        <span mbr-icon=\"\" class=\"amp-iconfont mbri-search\"></span>\n                    </div>\n                </div></amp-carousel>\n            \n        </div>\n        <p class=\"mbr-text align-center mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae cupiditate rerum ipsum tempora vero. Fugit facilis possimus assumenda ipsa, sapiente eius sunt fuga saepe nemo. Necessitatibus consequuntur, recusandae consequatur suscipit.</p>\n        <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons=\"\" mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">VIEW MORE</a></div>\n    </div>\n    <amp-image-lightbox id=\"lightbox1\" layout=\"nodisplay\">\n        <a class=\"control\" data-close-button-aria-label=\"Close\">\n            <span class=\"close\"></span>\n        </a>\n    </amp-image-lightbox>\n</section>",
+          "_cid": "sghAP568zC",
+          "_anchor": "slider4-u",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "img": {
+              "object-fit": "contain"
+            },
+            ".item, .group-title": {
+              "color": "#efefef"
+            },
+            "@media (max-width: 767px)": {
+              ".items-col": {
+                "margin": "2rem 0"
+              }
+            },
+            ".item, .items": {
+              "text-align": "center"
+            },
+            ".group-title": {
+              "text-align": "center"
+            }
+          },
+          "_name": "footer2",
+          "_customHTML": "<section class=\"footer4\" group=\"Footers\" plugins=\"amp-main\" global once=\"footer\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n\n        <select title=\"Columns\" name=\"columnsCount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\" selected>2</option>\n            <option value=\"3\">3</option>\n        </select>\n\n        <input type=\"checkbox\" title=\"Show Column Title\" name=\"showTitle\" checked>\n        <input type=\"range\" inline title=\"Column 1 Items\" name=\"columnItems1\" min=\"1\" max=\"6\" value=\"3\">\n        <input type=\"range\" inline title=\"Column 2 Items\" name=\"columnItems2\" min=\"1\" max=\"6\" value=\"3\" condition=\"columnsCount > 1\">\n        <input type=\"range\" inline title=\"Column 3 Items\" name=\"columnItems3\" min=\"1\" max=\"6\" value=\"3\" condition=\"columnsCount > 2\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background6.jpg\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#232323\">\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\">\n            <div class=\"image-block mbr-col-sm-12 mbr-col-md-3\">\n                <amp-img src=\"@THEME_PATH@/components/_images/background3.jpg\" layout=\"responsive\" width=\"358.93280000000004\" height=\"224.333\" alt=\"Mobirise\" class=\"mobirise-loader\">\n                    <div placeholder class=\"placeholder\"></div>\n                    <img class=\"mbr-temp\" src=\"@THEME_PATH@/components/_images/background3.jpg\" alt=\"Mobirise\">\n                </amp-img>\n            </div>\n\n            <div class=\"items-col mbr-col-sm-12 align-right\" mbr-class=\"{'mbr-col-md-3': columnsCount == 3,\n                             'mbr-col-md-4': columnsCount <= 2}\">\n                <h3 class=\"mbr-fonts-style group-title mbr-bold mbr-pb-3\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".group-title\">\n                    Contacts</h3>\n                <div class=\"items\" mbr-list mbr-list-grow=\"columnItems1\">\n                    <p class=\"item mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" data-app-selector=\".item, .items\">\n                        About Us\n                    </p>\n                    <p class=\"item mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" data-app-selector=\".item, .items\">\n                        Services\n                    </p>\n                    <p class=\"item mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" data-app-selector=\".item, .items\">\n                        Get In Touch\n                    </p>\n                </div>\n            </div>\n\n            <div class=\"items-col mbr-col-sm-12 align-right\" mbr-class=\"{'mbr-col-md-3': columnsCount == 3,\n                             'mbr-col-md-4': columnsCount <= 2}\" mbr-if=\"columnsCount > 1\">\n                <h3 class=\"mbr-fonts-style group-title mbr-bold mbr-pb-3\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".group-title\">\n                    Address</h3>\n                <div class=\"items\" mbr-list mbr-list-grow=\"columnItems2\">\n                    <p class=\"item mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" data-app-selector=\".item, .items\"><b>\n                        163 Xianlin Street, Nanjing, <br>Jiangsu Province 210023\n                    </b></p>\n                    <p class=\"item mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" data-app-selector=\".item, .items\">&nbsp;</p>\n                    <p class=\"item mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" data-app-selector=\".item, .items\">&nbsp;</p>\n                </div>\n            </div>\n\n            <div class=\"items-col mbr-col-sm-12 align-right\" mbr-class=\"{'mbr-col-md-3': columnsCount == 3,\n                             'mbr-col-md-4': columnsCount <= 2}\" mbr-if=\"columnsCount > 2\">\n                <h3 class=\"mbr-fonts-style group-title mbr-bold mbr-pb-3\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".group-title\">\n                    Links\n                </h3>\n                <div class=\"items\" mbr-list mbr-list-grow=\"columnItems3\">\n                    <p class=\"item mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" data-app-selector=\".item, .items\">\n                        Website Builder\n                    </p>\n                    <p class=\"item mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" data-app-selector=\".item, .items\">\n                        Download for Mac\n                    </p>\n                    <p class=\"item mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" data-app-selector=\".item, .items\">\n                        Download for Windows\n                    </p>\n                </div>\n            </div>\n\n        </div>\n    </div>\n</section>",
+          "_cid": "sg2zjYknzW",
+          "_anchor": "footer2-s",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footer",
+          "_params": {}
+        }
+      ]
+    },
+    "page6.html": {
+      "settings": {
+        "title": "compare",
+        "order": 2
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@menuBgColor",
+            "overflow": "visible",
+            ".navbar": {
+              "background": "@menuBgColor"
+            },
+            ".builder-sidebar, .dropdown-menu": {
+              "background-color": "@menuBgColor"
+            },
+            ".close-sidebar": {
+              "&:focus": {
+                "outline": "2px auto @primaryColor"
+              },
+              "span": {
+                "background-color": "@hamburgerColor"
+              }
+            },
+            ".ampstart-btn, amp-sidebar": {
+              "display": "block",
+              "&:focus": {
+                "outline": "none"
+              }
+            },
+            ".nav-dropdown a": {
+              "padding": "0.5rem 0 !important",
+              "margin": "0 0 10px !important"
+            },
+            ".navbar .navbar-collapse": {
+              "display": "none",
+              "&.show": {
+                "display": "block",
+                "position": "absolute",
+                "top": "0",
+                "& when (@sidebarSide = 'right')": {
+                  "right": "0"
+                },
+                "& when (@sidebarSide = 'left')": {
+                  "right": "auto",
+                  "left": "0"
+                },
+                "height": "100vh",
+                "overflow-y": "auto",
+                "padding": "70px 2rem 1rem",
+                "z-index": "1",
+                "background": "@menuBgColor"
+              }
+            },
+            ".dropdown.open > .dropdown-menu, .dropdown:hover > .dropdown-menu, .dropdown-item.dropdown-toggle": {
+              "left": "0",
+              "position": "relative"
+            },
+            "@media (min-width: 992px)": {
+              ".dropdown-menu .dropdown-toggle:after": {
+                "transform": "rotate(90deg)"
+              }
+            },
+            ".hamburger span": {
+              "background-color": "@hamburgerColor"
+            },
+            "amp-img": {
+              "height": "~\"@{logoHeight}px\"",
+              "width": "~\"@{logoWidth}px\"",
+              "img": {
+                "object-fit": "contain"
+              }
+            },
+            ".brand-name": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "menu1",
+          "_customHTML": "<section class=\"menu  horizontal-menu\" group=\"Menu\" plugins=\"amp-main,amp-sidebar\" global once=\"menu\" always-top position-absolute>\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked>\n        <input type=\"range\" title=\"Logo Height\" inline name=\"logoHeight\" min=\"35\" max=\"120\" value=\"55\" step=\"1\">\n        <input type=\"range\" title=\"Logo Width\" inline name=\"logoWidth\" min=\"35\" max=\"120\" value=\"45\" step=\"1\">\n\n        <input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\" checked>\n        <input type=\"checkbox\" title=\"Show Links\" name=\"showLinks\" checked>\n        <input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked>\n        <select title=\"Sidebar Side\" name=\"sidebarSide\">\n            <option value=\"left\">Left</option>\n            <option value=\"right\" selected>Right</option>\n        </select>\n        <input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#000000\">\n        <input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <nav class=\"navbar navbar-dropdown\" mbr-class=\"{'navbar-fixed-top': sticky}\">\n    <div class=\"menu-container mbr-jc-s container-fluid\">\n      <div class=\"navbar-brand\">\n          <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n              <amp-img src=\"@PROJECT_PATH@/assets/images/-90x90.jpg\" layout=\"responsive\" width=\"45\" height=\"45\" alt=\"Mobirise\" class=\"mobirise-loader\">\n                  <div placeholder class=\"placeholder\"></div>\n                  <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/-90x90.jpg\" alt=\"Mobirise\">\n              </amp-img>\n          </span>\n          <p mbr-text mbr-theme-style=\"display-7\" mbr-if=\"showBrand\" class=\"brand-name mbr-fonts-style mbr-bold\" data-app-selector=\".brand-name\">Data Journalism And Data-driven Journalism</p>\n      </div>\n        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n      <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showLinks || showButtons\">\n        <div class=\"hamburger\">\n          <span></span>\n          <span></span>\n          <span></span>\n          <span></span>\n        </div>\n        </button>\n        <!-- NAVBAR ITEMS -->\n        <ul mbr-menu class=\"navbar-nav nav-dropdown mbr-column\" mbr-theme-style=\"display-7\" mbr-if=\"showLinks\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item dropdown open\">\n            <a class=\"nav-link link text-secondary dropdown-toggle\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" data-toggle=\"dropdown-submenu\" aria-expanded=\"true\">Home</a><div class=\"dropdown-menu\"><div class=\"dropdown open\"><a class=\"text-secondary dropdown-item dropdown-toggle\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" data-toggle=\"dropdown-submenu\" aria-expanded=\"true\">附加知识</a><div class=\"dropdown-menu dropdown-submenu\"><a class=\"text-secondary dropdown-item text-primary\" href=\"http://www.gov.cn/xinwen/2017-01/27/content_5163903.htm#1\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" target=\"_blank\">教育部：《统筹推进世界一流大学和<br>一流学科建设实施办法（暂行）》</a><a class=\"text-secondary dropdown-item text-primary\" href=\"http://www.moe.gov.cn/s78/A22/A22_ztzl/ztzl_tjsylpt/sylpt_zcwj/\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\" target=\"_blank\">“双一流”建设政策文件</a></div></div></div>\n          </li></ul>\n        <!-- NAVBAR ITEMS END -->\n        <!-- SHOW BUTTON -->\n        <div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-7\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-md btn-black mbr-bold\" href=\"#\" data-app-placeholder=\"Type Text\">Join us</a></div>\n        <!-- SHOW BUTTON END -->\n      </div>\n      <!-- COLLAPSED MENU END -->\n      <button class=\"navbar-toggler hide\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showLinks || showButtons\">\n      <div class=\"hamburger\">\n        <span></span>\n        <span></span>\n        <span></span>\n        <span></span>\n      </div>\n      </button>\n      <button on=\"tap:sidebar.toggle\" class=\"ampstart-btn hamburger\" mbr-if=\"(showLinks||showButtons)\">\n        <span></span>\n        <span></span>\n        <span></span>\n        <span></span>\n      </button>\n    </div>\n  </nav>\n  <!-- AMP plug -->\n  <amp-sidebar id=\"sidebar\" layout=\"nodisplay\" side=\"{{sidebarSide}}\">\n    <div class=\"builder-sidebar\" id=\"builder-sidebar\">\n      <button on=\"tap:sidebar.close\" class=\"close-sidebar\">\n      <span></span>\n      <span></span>\n      </button>\n    </div>\n  </amp-sidebar>\n    \n</section>",
+          "_cid": "sg2E75DTV6",
+          "_anchor": "menu1-w",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "menu",
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              "& when (@overlay)": {
+                ".mbr-overlay": {
+                  "background": "@overlayColor",
+                  "opacity": "@overlayOpacity"
+                }
+              }
+            },
+            "& when (@masonryStyle)": {
+              "@media (min-width: 992px)": {
+                ".mbr-row": {
+                  "flex-direction": "column",
+                  "height": "(@masonryHeight * 1rem)",
+                  "align-content": "center",
+                  "justify-content": "flex-start",
+                  ".item": {
+                    "height": "auto",
+                    "flex": "none",
+                    "max-width": "100%",
+                    "& when (@imageWidth = 2)": {
+                      "width": "50.00%"
+                    },
+                    "& when (@imageWidth = 3)": {
+                      "width": "33.33%"
+                    },
+                    "& when (@imageWidth = 4)": {
+                      "width": "25.00%"
+                    }
+                  }
+                }
+              }
+            },
+            "@media (min-width: 992px)": {
+              "& when not (@noPaddings)": {
+                ".container-fluid": {
+                  "padding-left": "(@spacing * 1rem)",
+                  "padding-right": "(@spacing * 1rem)"
+                },
+                ".item": {
+                  "padding": "(@spacing * 1rem)"
+                },
+                ".item-img": {
+                  "padding-bottom": "0"
+                }
+              },
+              "& when (@noPaddings)": {
+                ".mbr-row": {
+                  "margin": "0",
+                  "padding": "0"
+                },
+                ".container-fluid, .container": {
+                  "padding": "0"
+                }
+              }
+            },
+            ".title": {
+              "& when (@spacing <= 2)": {
+                "padding-bottom": "((2 - @spacing) * 1rem)"
+              },
+              "& when (@spacing > 2)": {
+                "margin-bottom": "((2 - @spacing) * 1rem)"
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".item": {
+                "margin-bottom": "2rem"
+              }
+            },
+            ".item-wrapper": {
+              "width": "100%",
+              "height": "100%",
+              "position": "relative"
+            },
+            "& when (@showText)": {
+              "amp-img": {
+                "&:after": {
+                  "content": "\"\"",
+                  "display": "block",
+                  "background-color": "rgba(red(@bgColor), green(@bgColor), blue(@bgColor), @bgOpacity)",
+                  "position": "absolute",
+                  "left": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "top": "100%",
+                  "transition": "0.2s ease-in",
+                  "z-index": "1",
+                  "pointer-events": "none"
+                },
+                ".item-sign": {
+                  "position": "absolute",
+                  "left": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "padding": "10px",
+                  "z-index": "2",
+                  "transition": "0.2s ease-in",
+                  "background-color": "rgba(red(@bgColor), green(@bgColor), blue(@bgColor), @bgOpacity)",
+                  "color": "#ffffff"
+                }
+              },
+              "amp-img:hover": {
+                "&:after": {
+                  "top": "0%"
+                },
+                ".item-sign": {
+                  "background-color": "rgba(red(@bgColor), green(@bgColor), blue(@bgColor), 0)"
+                }
+              }
+            },
+            "& when (@squareStyle)": {
+              "amp-img, img": {
+                "object-fit": "cover",
+                "height": "300px",
+                "@media (min-width: 991px) and (max-width: 1199px)": {
+                  "height": "275px"
+                }
+              }
+            },
+            ".item-btn, .item-box-btn": {
+              "margin": "0"
+            },
+            ".item-box": {
+              "justify-content": "center",
+              "position": "relative",
+              "width": "100%",
+              "background": "#efefef",
+              "overflow": "auto",
+              "@media (min-width: 992px)": {
+                "max-width": "1000px"
+              },
+              "@media (max-width: 991px)": {
+                "width": "90%",
+                "margin": "1rem"
+              }
+            },
+            ".item-box-img": {
+              "@media (min-width: 992px)": {
+                "padding": "2rem"
+              },
+              "@media (max-width: 991px)": {
+                "padding": "1rem"
+              },
+              "amp-img": {
+                "height": "auto"
+              }
+            },
+            ".item-box-wrapper": {
+              "background-color": "#efefef",
+              "@media (min-width: 992px)": {
+                "padding": "2rem"
+              },
+              "@media (max-width: 991px)": {
+                "padding": "1rem"
+              }
+            },
+            "& when (@customStyles)": {
+              "& when (@boxShadow)": {
+                ".item-wrapper": {
+                  "box-shadow": "0px 0px (@shadowSize * 1px) 0px rgba(red(@shadowColor), green(@shadowColor), blue(@shadowColor), @shadowOpacity)"
+                }
+              },
+              "& when (@hoverOverlay)": {
+                "amp-img": {
+                  "&:after": {
+                    "content": "\"\"",
+                    "pointer-events": "none",
+                    "transition": "0.4s",
+                    "position": "absolute",
+                    "top": "0",
+                    "left": "0",
+                    "right": "0",
+                    "bottom": "0",
+                    "opacity": "0",
+                    "background-color": "rgba(red(@hoverColor), green(@hoverColor), blue(@hoverColor), @hoverOpacity)"
+                  },
+                  "&:hover": {
+                    "&:after": {
+                      "opacity": "1"
+                    }
+                  }
+                }
+              },
+              "& when (@hoverIcon)": {
+                ".icon-wrap": {
+                  "position": "absolute",
+                  "left": "0",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "margin": "auto",
+                  "opacity": "0",
+                  "transition": "0.4s",
+                  "height": "(@iconSize * 1rem)",
+                  "width": "(@iconSize * 1rem)",
+                  "z-index": "2",
+                  "span": {
+                    "color": "@iconColor",
+                    "font-size": "(@iconSize * 1rem)"
+                  }
+                },
+                "amp-img:hover .icon-wrap": {
+                  "opacity": "1"
+                }
+              },
+              "& when (@useBorderRadius)": {
+                ".item-wrapper": {
+                  "z-index": "12",
+                  "border-radius": "(@borderRadius * 1px)",
+                  "overflow": "hidden"
+                }
+              }
+            },
+            "& when not (@customStyles)": {
+              ".icon-wrap": {
+                "display": "none"
+              }
+            },
+            ".item": {
+              "cursor": "pointer"
+            },
+            "& when (@noPaddings)": {
+              ".item": {
+                "margin": "0",
+                "padding": "0"
+              }
+            },
+            ".mbr-section-title, .mbr-section-subtitle": {
+              "text-align": "center"
+            }
+          },
+          "_name": "gallery1",
+          "_customHTML": "<section class=\"amp-lightbox-gallery\" group=\"Shop\" plugins=\"amp-main, amp-lightbox-gallery\">\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n\t\t<input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n\t\t<input type=\"checkbox\" name=\"fullWidth\" title=\"Full Width\">\n\t\t<input type=\"checkbox\" name=\"masonryStyle\" title=\"Masonry Style\" condition=\"!squareStyle\">\n\t\t<input type=\"checkbox\" name=\"squareStyle\" title=\"Square Style\" condition=\"!masonryStyle\">\n\t\t<input type=\"range\" min=\"50\" max=\"1000\" step=\"10\" value=\"70\" name=\"masonryHeight\" title=\"Height\" condition=\"masonryStyle\">\n\n\t\t<header>Show Hide</header>\n\t\t<input type=\"checkbox\" name=\"showTitle\" title=\"Title\" checked=\"\">\n\t\t<input type=\"checkbox\" name=\"showSubtitle\" title=\"Subtitle\">\n\n\t\t<header>Image</header>\n\t\t<input type=\"range\" name=\"imageWidth\" title=\"Image Width\" min=\"2\" max=\"4\" step=\"1\" value=\"3\">\n\t\t<input type=\"checkbox\" name=\"showText\" title=\"Show Text\" checked=\"\">\n\t\t<input type=\"color\" name=\"bgColor\" title=\"BG Color\" value=\"#4ea2e3\" condition=\"showText\">\n\t\t<input type=\"range\" name=\"bgOpacity\" title=\"Opacity\" value=\"0.5\" min=\"0\" max=\"1\" step=\"0.1\" condition=\"showText\">\n\n\t\t<header condition=\"customStyle\">Custom Styles</header>\n\t\t<input type=\"checkbox\" name=\"noPaddings\" title=\"Without Padding\">\n\t\t<input type=\"checkbox\" name=\"customStyles\" title=\"Custom Style\">\n\n\t\t<header condition=\"customStyles\">Paddings</header>\n\t\t<input type=\"range\" title=\"Spacing\" name=\"spacing\" min=\"0\" max=\"5\" step=\"0.5\" value=\"1\" condition=\"customStyles &amp;&amp; !noPaddings\">\n\n\t\t<header condition=\"customStyles\">Overlay</header>\n\t\t<input type=\"checkbox\" name=\"hoverOverlay\" title=\"Enable\" condition=\"customStyles\">\n\t\t<input type=\"color\" name=\"hoverColor\" value=\"#4ea2e3\" title=\"Color\" condition=\"customStyles &amp;&amp; hoverOverlay\">\n\t\t<input type=\"range\" name=\"hoverOpacity\" value=\"0.5\" min=\"0\" max=\"1\" step=\"0.1\" title=\"Opacity\" condition=\"customStyles &amp;&amp; hoverOverlay\">\n\t\t<input type=\"checkbox\" name=\"hoverIcon\" title=\"Show Icon\" condition=\"customStyles\">\n\t\t<input type=\"color\" name=\"iconColor\" value=\"#ffffff\" title=\"Icon Color\" condition=\"customStyles &amp;&amp; hoverIcon\">\n\t\t<input type=\"range\" name=\"iconSize\" title=\"Icon Size\" min=\"1\" max=\"3\" step=\"0.5\" value=\"1.5\" condition=\"customStyles &amp;&amp; hoverIcon\">\n\n\t\t<header condition=\"customStyles\">Box Shadow</header>\n\t\t<input type=\"checkbox\" name=\"boxShadow\" title=\"Shadow\" condition=\"customStyles\">\n\t\t<input type=\"range\" name=\"shadowSize\" title=\"Size\" min=\"0\" max=\"100\" step=\"1\" value=\"10\" condition=\"customStyles &amp;&amp; boxShadow\">\n\t\t<input type=\"range\" name=\"shadowOpacity\" title=\"Opacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"customStyles &amp;&amp; boxShadow\">\n\t\t<input type=\"color\" name=\"shadowColor\" title=\"Color\" condition=\"customStyles &amp;&amp; boxShadow\">\n\n\t\t<header condition=\"customStyles\">Border Radius</header>\n\t\t<input type=\"checkbox\" name=\"useBorderRadius\" title=\"Round Border\" condition=\"customStyles\">\n\t\t<input type=\"range\" name=\"borderRadius\" title=\"Size\" min=\"0\" max=\"50\" step=\"1\" value=\"5\" condition=\"customStyles &amp;&amp; useBorderRadius\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" required=\"\">\n\t\t\t<input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n\t\t\t<input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected=\"\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked=\"\" condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay &amp;&amp; bg.type == 'image'\">\n\t\t<input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay &amp;&amp; bg.type == 'image'\">\n\t</mbr-parameters>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\"></div>\n\t<div mbr-class=\"{'container': !fullWidth,\n\t\t\t\t\t 'container-fluid': fullWidth}\">\n\t\t<div class=\"title mbr-pb-4\" mbr-if=\"showTitle || showSubtitle\">\n\t\t\t<h3 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">Gallery with Image Links and Lightboxes</h3>\n\t\t\t<h4 class=\"mbr-section-subtitle mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">Enter your gallery subtitle here</h4>\n\t\t</div>\n\t\t<div class=\"mbr-row\" mbr-class=\"{'mbr-column mbr-jc-s': masonryStyle}\">\n            <div class=\"item gallery-image mbr-col-md-6 mbr-col-sm-12\" mbr-class=\"{'mbr-col-lg-4': imageWidth == 3,\n\t\t\t\t\t\t\t 'mbr-col-lg-3': imageWidth == 4,\n\t\t\t\t\t\t\t 'mbr-col-lg-6': imageWidth == 2}\">\n\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t<amp-img lightbox=\"\" src=\"@THEME_PATH@/components/_images/img/01.jpg\" layout=\"responsive\" width=\"347.985\" height=\"231.99\" alt=\"image\" class=\"placeholder-loader lb-image\">\n                        <div placeholder=\"\" class=\"placeholder\"></div>\n                        <div class=\"icon-wrap iconfont-wrapper\" mbr-if=\"hoverIcon\">\n                            <span mbr-icon=\"\" class=\"amp-iconfont mbri-search\"></span>\n                        </div>\n\t\t\t\t\t\t<p class=\"item-sign mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".item-sign\">Type caption here</p>\n\t\t\t\t\t\t<img class=\"mbr-temp nodisplay\" src=\"@THEME_PATH@/components/_images/img/01.jpg\" alt=\"\">\n\t\t\t\t\t</amp-img>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"item gallery-image mbr-col-md-6 mbr-col-sm-12\" mbr-class=\"{'mbr-col-lg-4': imageWidth == 3,\n\t\t\t\t\t\t\t 'mbr-col-lg-3': imageWidth == 4,\n\t\t\t\t\t\t\t 'mbr-col-lg-6': imageWidth == 2}\">\n\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t<amp-img lightbox=\"\" src=\"@THEME_PATH@/components/_images/img/02.jpg\" layout=\"responsive\" width=\"347.985\" height=\"231.99\" alt=\"image\" class=\"placeholder-loader lb-image\">\n                        <div placeholder=\"\" class=\"placeholder\"></div>\n                        <div class=\"icon-wrap iconfont-wrapper\" mbr-if=\"hoverIcon\">\n                            <span mbr-icon=\"\" class=\"amp-iconfont mbri-search\"></span>\n                        </div>\n\t\t\t\t\t\t<p class=\"item-sign mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".item-sign\">Type caption here</p>\n\t\t\t\t\t\t<img class=\"mbr-temp nodisplay\" src=\"@THEME_PATH@/components/_images/img/02.jpg\" alt=\"\">\n\t\t\t\t\t</amp-img>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"item gallery-image mbr-col-md-6 mbr-col-sm-12\" mbr-class=\"{'mbr-col-lg-4': imageWidth == 3,\n\t\t\t\t\t\t\t 'mbr-col-lg-3': imageWidth == 4,\n\t\t\t\t\t\t\t 'mbr-col-lg-6': imageWidth == 2}\">\n\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t<amp-img lightbox=\"\" src=\"@THEME_PATH@/components/_images/img/03.jpg\" layout=\"responsive\" width=\"347.985\" height=\"231.99\" alt=\"image\" class=\"placeholder-loader lb-image\">\n                        <div placeholder=\"\" class=\"placeholder\"></div>\n                        <div class=\"icon-wrap iconfont-wrapper\" mbr-if=\"hoverIcon\">\n                            <span mbr-icon=\"\" class=\"amp-iconfont mbri-search\"></span>\n                        </div>\n\t\t\t\t\t\t<p class=\"item-sign mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".item-sign\">Type caption here</p>\n\t\t\t\t\t\t<img class=\"mbr-temp nodisplay\" src=\"@THEME_PATH@/components/_images/img/03.jpg\" alt=\"\">\n\t\t\t\t\t</amp-img>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"item gallery-image mbr-col-md-6 mbr-col-sm-12\" mbr-class=\"{'mbr-col-lg-4': imageWidth == 3,\n\t\t\t\t\t\t\t 'mbr-col-lg-3': imageWidth == 4,\n\t\t\t\t\t\t\t 'mbr-col-lg-6': imageWidth == 2}\">\n\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t<amp-img lightbox=\"\" src=\"@THEME_PATH@/components/_images/img/04.jpg\" layout=\"responsive\" width=\"348.202626641651\" height=\"231.99\" alt=\"image\" class=\"placeholder-loader lb-image\">\n                        <div placeholder=\"\" class=\"placeholder\"></div>\n                        <div class=\"icon-wrap iconfont-wrapper\" mbr-if=\"hoverIcon\">\n                            <span mbr-icon=\"\" class=\"amp-iconfont mbri-search\"></span>\n                        </div>\n\t\t\t\t\t\t<p class=\"item-sign mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".item-sign\">Type caption here</p>\n\t\t\t\t\t\t<img class=\"mbr-temp nodisplay\" src=\"@THEME_PATH@/components/_images/img/04.jpg\" alt=\"\">\n\t\t\t\t\t</amp-img>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"item gallery-image mbr-col-md-6 mbr-col-sm-12\" mbr-class=\"{'mbr-col-lg-4': imageWidth == 3,\n\t\t\t\t\t\t\t 'mbr-col-lg-3': imageWidth == 4,\n\t\t\t\t\t\t\t 'mbr-col-lg-6': imageWidth == 2}\">\n\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t<amp-img lightbox=\"\" src=\"@THEME_PATH@/components/_images/img/05.jpg\" layout=\"responsive\" width=\"347.985\" height=\"231.99\" alt=\"image\" class=\"placeholder-loader lb-image\">\n                        <div placeholder=\"\" class=\"placeholder\"></div>\n                        <div class=\"icon-wrap iconfont-wrapper\" mbr-if=\"hoverIcon\">\n                            <span mbr-icon=\"\" class=\"amp-iconfont mbri-search\"></span>\n                        </div>\n\t\t\t\t\t\t<p class=\"item-sign mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".item-sign\">Type caption here</p>\n\t\t\t\t\t\t<img class=\"mbr-temp nodisplay\" src=\"@THEME_PATH@/components/_images/img/05.jpg\" alt=\"\">\n\t\t\t\t\t</amp-img>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"item gallery-image mbr-col-md-6 mbr-col-sm-12\" mbr-class=\"{'mbr-col-lg-4': imageWidth == 3,\n\t\t\t\t\t\t\t 'mbr-col-lg-3': imageWidth == 4,\n\t\t\t\t\t\t\t 'mbr-col-lg-6': imageWidth == 2}\">\n\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t<amp-img lightbox=\"\" src=\"@THEME_PATH@/components/_images/img/06.jpg\" layout=\"responsive\" width=\"348.202626641651\" height=\"231.99\" alt=\"image\" class=\"placeholder-loader lb-image\">\n                        <div placeholder=\"\" class=\"placeholder\"></div>\n                        <div class=\"icon-wrap iconfont-wrapper\" mbr-if=\"hoverIcon\">\n                            <span mbr-icon=\"\" class=\"amp-iconfont mbri-search\"></span>\n                        </div>\n\t\t\t\t\t\t<p class=\"item-sign mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".item-sign\">Type caption here</p>\n\t\t\t\t\t\t<img class=\"mbr-temp nodisplay\" src=\"@THEME_PATH@/components/_images/img/06.jpg\" alt=\"\">\n\t\t\t\t\t</amp-img>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "sghBmOcWpi",
+          "_anchor": "gallery1-10",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".counter-container": {
+              "li when (@stylizedCounters)": {
+                "list-style": "none",
+                "position": "relative",
+                "&:before": {
+                  "position": "absolute",
+                  "left": "-55px",
+                  "content": "''",
+                  "display": "inline-block",
+                  "margin": "10px 15px",
+                  "line-height": "20px",
+                  "width": "10px",
+                  "height": "10px",
+                  "& when (@countersType = 'circle')": {
+                    "border": "1px solid @counterColor",
+                    "color": "@counterColor"
+                  },
+                  "& when not (@countersType = 'circle')": {
+                    "color": "contrast(@counterColor)",
+                    "background": "@counterColor"
+                  },
+                  "& when not (@countersType = 'square') and not (@countersType = 'romb')": {
+                    "border-radius": "50%"
+                  },
+                  "& when (@countersType = 'romb')": {
+                    "-webkit-transform": "rotate(45deg)",
+                    "transform": "rotate(45deg)"
+                  }
+                }
+              }
+            }
+          },
+          "_name": "content7",
+          "_customHTML": "<section class=\"content7 mbr-section\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\" checked=\"\">\n        <input type=\"color\" title=\"Counter Color\" name=\"counterColor\" value=\"#4ea2e3\" condition=\"stylizedCounters\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\" checked=\"\">\n        <select title=\"Counters Type\" name=\"countersType\" condition=\"stylizedCounters\">\n            <option value=\"default\">Сircle Fill</option>\n            <option value=\"circle\">Circle</option>\n            <option value=\"square\">Square</option>\n            <option value=\"romb\" selected=\"\">Rhombus</option>\n\n        </select>   \n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\">\n            <div class=\"mbr-text counter-container mbr-fonts-style mbr-col-lg-8 mbr-col-md-12 mbr-col-sm-12\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline=\"\" mbr-article=\"\">\n                <ul>\n                    <li class=\"mbr-pb-2\"><b>PERFOMANCE</b> - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nisi debitis quibusdam sint, in neque ut sapiente saepe reiciendis quia, amet, accusamus alias numquam ipsum quo quae deserunt laborum sed! <a href=\"https://mobiri.se/\">Try it now!</a></li>\n                    <li class=\"mbr-pb-2\"><b>ENGAGEMENTS</b> - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nihil ut soluta eos, sint ex ad tenetur dolore at inventore, ipsam ullam molestiae magnam repellat quod earum in sed assumenda! <a href=\"https://mobiri.se/\">Try it now!</a></li>\n                    <li class=\"mbr-pb-2\"><b>FLEXIBILITY</b> - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam nulla assumenda magni temporibus sapiente optio ullam quia. Deserunt quod a ab, ullam ea sed, corrupti consequuntur necessitatibus maiores exercitationem ut. <a href=\"https://mobiri.se/\">Try it now!</a></li>\n                </ul>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sghB8n1n4J",
+          "_anchor": "content7-z",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "img": {
+              "object-fit": "contain"
+            },
+            ".item, .group-title": {
+              "color": "#efefef"
+            },
+            "@media (max-width: 767px)": {
+              ".items-col": {
+                "margin": "2rem 0"
+              }
+            },
+            ".item, .items": {
+              "text-align": "center"
+            },
+            ".group-title": {
+              "text-align": "center"
+            }
+          },
+          "_name": "footer2",
+          "_customHTML": "<section class=\"footer4\" group=\"Footers\" plugins=\"amp-main\" global once=\"footer\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n\n        <select title=\"Columns\" name=\"columnsCount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\" selected>2</option>\n            <option value=\"3\">3</option>\n        </select>\n\n        <input type=\"checkbox\" title=\"Show Column Title\" name=\"showTitle\" checked>\n        <input type=\"range\" inline title=\"Column 1 Items\" name=\"columnItems1\" min=\"1\" max=\"6\" value=\"3\">\n        <input type=\"range\" inline title=\"Column 2 Items\" name=\"columnItems2\" min=\"1\" max=\"6\" value=\"3\" condition=\"columnsCount > 1\">\n        <input type=\"range\" inline title=\"Column 3 Items\" name=\"columnItems3\" min=\"1\" max=\"6\" value=\"3\" condition=\"columnsCount > 2\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background6.jpg\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#232323\">\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\">\n            <div class=\"image-block mbr-col-sm-12 mbr-col-md-3\">\n                <amp-img src=\"@THEME_PATH@/components/_images/background3.jpg\" layout=\"responsive\" width=\"358.93280000000004\" height=\"224.333\" alt=\"Mobirise\" class=\"mobirise-loader\">\n                    <div placeholder class=\"placeholder\"></div>\n                    <img class=\"mbr-temp\" src=\"@THEME_PATH@/components/_images/background3.jpg\" alt=\"Mobirise\">\n                </amp-img>\n            </div>\n\n            <div class=\"items-col mbr-col-sm-12 align-right\" mbr-class=\"{'mbr-col-md-3': columnsCount == 3,\n                             'mbr-col-md-4': columnsCount <= 2}\">\n                <h3 class=\"mbr-fonts-style group-title mbr-bold mbr-pb-3\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".group-title\">\n                    Contacts</h3>\n                <div class=\"items\" mbr-list mbr-list-grow=\"columnItems1\">\n                    <p class=\"item mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" data-app-selector=\".item, .items\">\n                        About Us\n                    </p>\n                    <p class=\"item mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" data-app-selector=\".item, .items\">\n                        Services\n                    </p>\n                    <p class=\"item mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" data-app-selector=\".item, .items\">\n                        Get In Touch\n                    </p>\n                </div>\n            </div>\n\n            <div class=\"items-col mbr-col-sm-12 align-right\" mbr-class=\"{'mbr-col-md-3': columnsCount == 3,\n                             'mbr-col-md-4': columnsCount <= 2}\" mbr-if=\"columnsCount > 1\">\n                <h3 class=\"mbr-fonts-style group-title mbr-bold mbr-pb-3\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".group-title\">\n                    Address</h3>\n                <div class=\"items\" mbr-list mbr-list-grow=\"columnItems2\">\n                    <p class=\"item mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" data-app-selector=\".item, .items\"><b>\n                        163 Xianlin Street, Nanjing, <br>Jiangsu Province 210023\n                    </b></p>\n                    <p class=\"item mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" data-app-selector=\".item, .items\">&nbsp;</p>\n                    <p class=\"item mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" data-app-selector=\".item, .items\">&nbsp;</p>\n                </div>\n            </div>\n\n            <div class=\"items-col mbr-col-sm-12 align-right\" mbr-class=\"{'mbr-col-md-3': columnsCount == 3,\n                             'mbr-col-md-4': columnsCount <= 2}\" mbr-if=\"columnsCount > 2\">\n                <h3 class=\"mbr-fonts-style group-title mbr-bold mbr-pb-3\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".group-title\">\n                    Links\n                </h3>\n                <div class=\"items\" mbr-list mbr-list-grow=\"columnItems3\">\n                    <p class=\"item mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" data-app-selector=\".item, .items\">\n                        Website Builder\n                    </p>\n                    <p class=\"item mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" data-app-selector=\".item, .items\">\n                        Download for Mac\n                    </p>\n                    <p class=\"item mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" data-app-selector=\".item, .items\">\n                        Download for Windows\n                    </p>\n                </div>\n            </div>\n\n        </div>\n    </div>\n</section>",
+          "_cid": "sg2zjYknzW",
+          "_anchor": "footer2-x",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footer",
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
